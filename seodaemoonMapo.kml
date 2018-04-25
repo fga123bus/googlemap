@@ -1,0 +1,682 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>서대문마포</name>
+    <Style id="icon-seq2-0-0-0288D1-normal">
+      <IconStyle>
+        <color>ffd18802</color>
+        <scale>1</scale>
+        <Icon>
+          <href>images/icon-1.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="icon-seq2-0-0-0288D1-highlight">
+      <IconStyle>
+        <color>ffd18802</color>
+        <scale>1</scale>
+        <Icon>
+          <href>images/icon-1.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+    </Style>
+    <StyleMap id="icon-seq2-0-0-0288D1">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-seq2-0-0-0288D1-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-seq2-0-0-0288D1-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-seq2-0-1-0288D1-normal">
+      <IconStyle>
+        <color>ffd18802</color>
+        <scale>1</scale>
+        <Icon>
+          <href>images/icon-2.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="icon-seq2-0-1-0288D1-highlight">
+      <IconStyle>
+        <color>ffd18802</color>
+        <scale>1</scale>
+        <Icon>
+          <href>images/icon-2.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+    </Style>
+    <StyleMap id="icon-seq2-0-1-0288D1">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-seq2-0-1-0288D1-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-seq2-0-1-0288D1-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-seq2-0-10-0288D1-normal">
+      <IconStyle>
+        <color>ffd18802</color>
+        <scale>1</scale>
+        <Icon>
+          <href>images/icon-11.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="icon-seq2-0-10-0288D1-highlight">
+      <IconStyle>
+        <color>ffd18802</color>
+        <scale>1</scale>
+        <Icon>
+          <href>images/icon-11.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+    </Style>
+    <StyleMap id="icon-seq2-0-10-0288D1">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-seq2-0-10-0288D1-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-seq2-0-10-0288D1-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-seq2-0-11-0288D1-normal">
+      <IconStyle>
+        <color>ffd18802</color>
+        <scale>1</scale>
+        <Icon>
+          <href>images/icon-12.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="icon-seq2-0-11-0288D1-highlight">
+      <IconStyle>
+        <color>ffd18802</color>
+        <scale>1</scale>
+        <Icon>
+          <href>images/icon-12.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+    </Style>
+    <StyleMap id="icon-seq2-0-11-0288D1">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-seq2-0-11-0288D1-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-seq2-0-11-0288D1-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-seq2-0-2-0288D1-normal">
+      <IconStyle>
+        <color>ffd18802</color>
+        <scale>1</scale>
+        <Icon>
+          <href>images/icon-3.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="icon-seq2-0-2-0288D1-highlight">
+      <IconStyle>
+        <color>ffd18802</color>
+        <scale>1</scale>
+        <Icon>
+          <href>images/icon-3.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+    </Style>
+    <StyleMap id="icon-seq2-0-2-0288D1">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-seq2-0-2-0288D1-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-seq2-0-2-0288D1-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-seq2-0-3-0288D1-normal">
+      <IconStyle>
+        <color>ffd18802</color>
+        <scale>1</scale>
+        <Icon>
+          <href>images/icon-4.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="icon-seq2-0-3-0288D1-highlight">
+      <IconStyle>
+        <color>ffd18802</color>
+        <scale>1</scale>
+        <Icon>
+          <href>images/icon-4.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+    </Style>
+    <StyleMap id="icon-seq2-0-3-0288D1">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-seq2-0-3-0288D1-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-seq2-0-3-0288D1-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-seq2-0-4-0288D1-normal">
+      <IconStyle>
+        <color>ffd18802</color>
+        <scale>1</scale>
+        <Icon>
+          <href>images/icon-5.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="icon-seq2-0-4-0288D1-highlight">
+      <IconStyle>
+        <color>ffd18802</color>
+        <scale>1</scale>
+        <Icon>
+          <href>images/icon-5.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+    </Style>
+    <StyleMap id="icon-seq2-0-4-0288D1">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-seq2-0-4-0288D1-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-seq2-0-4-0288D1-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-seq2-0-5-0288D1-normal">
+      <IconStyle>
+        <color>ffd18802</color>
+        <scale>1</scale>
+        <Icon>
+          <href>images/icon-6.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="icon-seq2-0-5-0288D1-highlight">
+      <IconStyle>
+        <color>ffd18802</color>
+        <scale>1</scale>
+        <Icon>
+          <href>images/icon-6.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+    </Style>
+    <StyleMap id="icon-seq2-0-5-0288D1">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-seq2-0-5-0288D1-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-seq2-0-5-0288D1-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-seq2-0-6-0288D1-normal">
+      <IconStyle>
+        <color>ffd18802</color>
+        <scale>1</scale>
+        <Icon>
+          <href>images/icon-7.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="icon-seq2-0-6-0288D1-highlight">
+      <IconStyle>
+        <color>ffd18802</color>
+        <scale>1</scale>
+        <Icon>
+          <href>images/icon-7.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+    </Style>
+    <StyleMap id="icon-seq2-0-6-0288D1">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-seq2-0-6-0288D1-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-seq2-0-6-0288D1-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-seq2-0-7-0288D1-normal">
+      <IconStyle>
+        <color>ffd18802</color>
+        <scale>1</scale>
+        <Icon>
+          <href>images/icon-8.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="icon-seq2-0-7-0288D1-highlight">
+      <IconStyle>
+        <color>ffd18802</color>
+        <scale>1</scale>
+        <Icon>
+          <href>images/icon-8.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+    </Style>
+    <StyleMap id="icon-seq2-0-7-0288D1">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-seq2-0-7-0288D1-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-seq2-0-7-0288D1-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-seq2-0-8-0288D1-normal">
+      <IconStyle>
+        <color>ffd18802</color>
+        <scale>1</scale>
+        <Icon>
+          <href>images/icon-9.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="icon-seq2-0-8-0288D1-highlight">
+      <IconStyle>
+        <color>ffd18802</color>
+        <scale>1</scale>
+        <Icon>
+          <href>images/icon-9.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+    </Style>
+    <StyleMap id="icon-seq2-0-8-0288D1">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-seq2-0-8-0288D1-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-seq2-0-8-0288D1-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-seq2-0-9-0288D1-normal">
+      <IconStyle>
+        <color>ffd18802</color>
+        <scale>1</scale>
+        <Icon>
+          <href>images/icon-10.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="icon-seq2-0-9-0288D1-highlight">
+      <IconStyle>
+        <color>ffd18802</color>
+        <scale>1</scale>
+        <Icon>
+          <href>images/icon-10.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+    </Style>
+    <StyleMap id="icon-seq2-0-9-0288D1">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-seq2-0-9-0288D1-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-seq2-0-9-0288D1-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="line-0288D1-2000-nodesc-normal">
+      <LineStyle>
+        <color>ffd18802</color>
+        <width>2</width>
+      </LineStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <Style id="line-0288D1-2000-nodesc-highlight">
+      <LineStyle>
+        <color>ffd18802</color>
+        <width>3</width>
+      </LineStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <StyleMap id="line-0288D1-2000-nodesc">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#line-0288D1-2000-nodesc-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#line-0288D1-2000-nodesc-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Placemark>
+      <name>1.홍제초등학교정문</name>
+      <description><![CDATA[<img src="https://lh5.googleusercontent.com/wYHDqAClfbmUS1z6XVGRvUQOxVcCvCprGEN2zjwKq8st5ibRO0KgsQ3mg9Z0PASkKCO6YlhVIMahEhNECKOj0QiuTNBqOppyr2jMj6Xrjzmx6f5h0tIcUOHMVRrdxDDI" height="200" width="auto" /><br><br>승차위치 홍제초등학교 정문 앞 도착추정시간 8:00 http://me2.do/GVCYNkP1]]></description>
+      <styleUrl>#icon-seq2-0-0-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="gx_media_links">
+          <value>https://lh5.googleusercontent.com/wYHDqAClfbmUS1z6XVGRvUQOxVcCvCprGEN2zjwKq8st5ibRO0KgsQ3mg9Z0PASkKCO6YlhVIMahEhNECKOj0QiuTNBqOppyr2jMj6Xrjzmx6f5h0tIcUOHMVRrdxDDI</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          126.943858,37.592291,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>홍제역 중앙차선</name>
+      <description><![CDATA[<img src="https://lh3.googleusercontent.com/4GeAKRdfEw8ItqoGFXpedrVLibUdVbFc_YhiBMcKVM4arTjSrhpT2e5FHivvQ3IuQzw4oNzBB5DVCm4ISdK7GbLTJoHCMurWslqMlaKEYOMqfAWWRgh6uepNsqGbdfM" height="200" width="auto" /><br><br>홍제파출소앞 잠깐 정차함]]></description>
+      <styleUrl>#icon-seq2-0-1-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="gx_media_links">
+          <value>https://lh3.googleusercontent.com/4GeAKRdfEw8ItqoGFXpedrVLibUdVbFc_YhiBMcKVM4arTjSrhpT2e5FHivvQ3IuQzw4oNzBB5DVCm4ISdK7GbLTJoHCMurWslqMlaKEYOMqfAWWRgh6uepNsqGbdfM</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          126.944669,37.58817,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>2.안산초등학교(중) 버스중앙차선</name>
+      <description><![CDATA[<img src="https://lh5.googleusercontent.com/2Fl66Cazuam9v2lKTp-JNfeBWqEJmKq9uj6Sxj06EbhAxuWdFeP5TB0SVlxCxD91FQ808xm3xdcHdcGjtx_U4ZUkBJxphaTto2VyjEQZfX0rvySQvT0TNtnJYcihTt4" height="200" width="auto" /><br><br>승차위치 안산초등학교 정문 앞 도착추정시간 8:06 http://me2.do/54cMxqrj]]></description>
+      <styleUrl>#icon-seq2-0-2-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="gx_media_links">
+          <value>https://lh5.googleusercontent.com/2Fl66Cazuam9v2lKTp-JNfeBWqEJmKq9uj6Sxj06EbhAxuWdFeP5TB0SVlxCxD91FQ808xm3xdcHdcGjtx_U4ZUkBJxphaTto2VyjEQZfX0rvySQvT0TNtnJYcihTt4</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          126.952604,37.579519,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>3.영천시장 버스중앙차선정류장</name>
+      <description><![CDATA[<img src="https://lh6.googleusercontent.com/mFiEshrCdzZlaZFK0kYyIhX2Ccg9WVbP927YzH4T3hWQR5Bw_x2e1OTFz9AJ4efzOXCLUuVuFJ9U2aCpczWysQPlBjmGL-Z83ddTUdTD10jN2TX4w_uZMRhWbOG455i0" height="200" width="auto" /><br><br>정류장번호 13591 도착추정시간 8:11 http://me2.do/Fi6NOVE4]]></description>
+      <styleUrl>#icon-seq2-0-3-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="gx_media_links">
+          <value>https://lh6.googleusercontent.com/mFiEshrCdzZlaZFK0kYyIhX2Ccg9WVbP927YzH4T3hWQR5Bw_x2e1OTFz9AJ4efzOXCLUuVuFJ9U2aCpczWysQPlBjmGL-Z83ddTUdTD10jN2TX4w_uZMRhWbOG455i0</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          126.962861,37.569492,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>4.서대문전철역(02번 마을버스 정류장)</name>
+      <description><![CDATA[<img src="https://lh3.googleusercontent.com/BP4UuH0GEhWrAFxxL9DmdMkegbGRrXMcoIkI8VfIT37d2qxqKU-PVi_Eefv5qzm0h4tsib3Qc8J5OytvOucX3KKFN20vc2gkhmavSoWSwY9L9ych6Mi15gghEzdAU9xRVw" height="200" width="auto" /><br><br>정류장번호 13664 도착추정시간 8:13 http://me2.do/5KT95BiM]]></description>
+      <styleUrl>#icon-seq2-0-4-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="gx_media_links">
+          <value>https://lh3.googleusercontent.com/BP4UuH0GEhWrAFxxL9DmdMkegbGRrXMcoIkI8VfIT37d2qxqKU-PVi_Eefv5qzm0h4tsib3Qc8J5OytvOucX3KKFN20vc2gkhmavSoWSwY9L9ych6Mi15gghEzdAU9xRVw</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          126.966054,37.565384,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>5.미동초등학교</name>
+      <description><![CDATA[<img src="https://lh5.googleusercontent.com/ILglR6rhFag4s2W1dUbi8WhaHq3ODMcvNTOUzcPKD7U8XFjJGF2qdgxw_hlCBlNvu9WlPzNecKsLXKEfHMJ6bfLOFG_rpsepJSVDZCKUdIsmojY8W-LwL-s7Nhk0rRAv" height="200" width="auto" /><br><br>정류장번호 13240 도착추정시간 8:14 http://me2.do/FTjSqxqH]]></description>
+      <styleUrl>#icon-seq2-0-5-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="gx_media_links">
+          <value>https://lh5.googleusercontent.com/ILglR6rhFag4s2W1dUbi8WhaHq3ODMcvNTOUzcPKD7U8XFjJGF2qdgxw_hlCBlNvu9WlPzNecKsLXKEfHMJ6bfLOFG_rpsepJSVDZCKUdIsmojY8W-LwL-s7Nhk0rRAv</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          126.964692,37.563422,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>6.아현역(중앙차로)</name>
+      <description><![CDATA[<img src="https://lh5.googleusercontent.com/7EC49e64j_7FWLNfcikBSDZTr4XppWOZZfYEBN35PmmpzgRHk1JIqH8jtwvWEVsbGnIZZ6-6QuP0jORzj79nzHhlTg8iKvb5txiQY-NaGTbyp8Fl3KQjzfflXiALPoYy" height="200" width="auto" /><br><br>정류장번호 13044 도착추정시간 8:16 중앙차로http://me2.do/GrlzNrin]]></description>
+      <styleUrl>#icon-seq2-0-6-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="gx_media_links">
+          <value>https://lh5.googleusercontent.com/7EC49e64j_7FWLNfcikBSDZTr4XppWOZZfYEBN35PmmpzgRHk1JIqH8jtwvWEVsbGnIZZ6-6QuP0jORzj79nzHhlTg8iKvb5txiQY-NaGTbyp8Fl3KQjzfflXiALPoYy</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          126.956083,37.557382,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>7.이화여대입구</name>
+      <description><![CDATA[<img src="https://lh6.googleusercontent.com/g9XHes-7lQGthAWJL9503lsi6kZ1IplRhmIBK75Cyrne1cP-edVI23gUAJWNJvxmyoDgbjuRjA6ely5lflGt1TPbSj1FXYuuMMAHk_C2Mz5VdjvQ1wmRYwSIQkiklPFP" height="200" width="auto" /><br><br>정류장번호 14208 도착추정시간 8:19 http://me2.do/GJGeTxvV]]></description>
+      <styleUrl>#icon-seq2-0-7-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="gx_media_links">
+          <value>https://lh6.googleusercontent.com/g9XHes-7lQGthAWJL9503lsi6kZ1IplRhmIBK75Cyrne1cP-edVI23gUAJWNJvxmyoDgbjuRjA6ely5lflGt1TPbSj1FXYuuMMAHk_C2Mz5VdjvQ1wmRYwSIQkiklPFP</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          126.945796,37.555886,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>서강대후문</name>
+      <description><![CDATA[<img src="https://lh3.googleusercontent.com/0vgrtHKw7Oq96z6HDgTRVbP6dT8AV59DaNdHzHNhqXJ2_tIxOlEXbJA8rahaUMEwAsLROIMST1TpwWyCGRjqmZmQK0BB74LRaLCk65yy-Pg_AnrKVmJB_2nZ8ixJyjovmg" height="200" width="auto" /><br><br>]]></description>
+      <styleUrl>#icon-seq2-0-8-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="gx_media_links">
+          <value>https://lh3.googleusercontent.com/0vgrtHKw7Oq96z6HDgTRVbP6dT8AV59DaNdHzHNhqXJ2_tIxOlEXbJA8rahaUMEwAsLROIMST1TpwWyCGRjqmZmQK0BB74LRaLCk65yy-Pg_AnrKVmJB_2nZ8ixJyjovmg</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          126.944114,37.550819,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>8.마포자이2차아파트(자이정문)</name>
+      <description><![CDATA[<img src="https://lh4.googleusercontent.com/6UdJq-grtdGCiGNDfBcri1xWLPRh3pHJ0oIiGea_Tt0i9TiXX9HlSafbNVomf9KbxApA3ZldB8_Ko2RSoHhcFDNrtPMmqC9DQbMhYkrFbsxnCz0_tMO13ZsbB5FKwGEM_g" height="200" width="auto" /><br><br>정류장번호 14213 도착추정시간 8:22 http://me2.do/5pteHPcv]]></description>
+      <styleUrl>#icon-seq2-0-9-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="gx_media_links">
+          <value>https://lh4.googleusercontent.com/6UdJq-grtdGCiGNDfBcri1xWLPRh3pHJ0oIiGea_Tt0i9TiXX9HlSafbNVomf9KbxApA3ZldB8_Ko2RSoHhcFDNrtPMmqC9DQbMhYkrFbsxnCz0_tMO13ZsbB5FKwGEM_g</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          126.942495,37.548607,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>9.공덕역1번출구</name>
+      <description><![CDATA[<img src="https://lh4.googleusercontent.com/DHdhYYrQ-u8mpjj9O4AOALCkxXfyhWEOT2yPyTf2s65-HWVr54HlIstNz9TYpHZWIdw86rNMbDXERrdyB5zGMBJSN1PJ0cQIlNYb1XQKRBtPgtEyByVwZnbOk1i_5HNM" height="200" width="auto" /><br><br>정류장번호 14180 도착추정시간 8:24 http://me2.do/GtmP1rpe]]></description>
+      <styleUrl>#icon-seq2-0-10-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="gx_media_links">
+          <value>https://lh4.googleusercontent.com/DHdhYYrQ-u8mpjj9O4AOALCkxXfyhWEOT2yPyTf2s65-HWVr54HlIstNz9TYpHZWIdw86rNMbDXERrdyB5zGMBJSN1PJ0cQIlNYb1XQKRBtPgtEyByVwZnbOk1i_5HNM</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          126.950433,37.54408,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>10.마포역</name>
+      <description><![CDATA[<img src="https://lh4.googleusercontent.com/hZ9YNT3QiLW1J8JOeGaWiVDZaDNseBtYg-f58l5ZclJ-T-Ao2jBD3zzy5n0GSqrs6gkzlpm1fRvOeL-G-OpppGuhOAW1ARfZAIhF7-CjKx6kGSPyMkl6hpkTkWYlYdbxtQ" height="200" width="auto" /><br><br>정류장번호 14132 도착추정시간 8:26 http://me2.do/xlnQCNYY]]></description>
+      <styleUrl>#icon-seq2-0-11-0288D1</styleUrl>
+      <ExtendedData>
+        <Data name="gx_media_links">
+          <value>https://lh4.googleusercontent.com/hZ9YNT3QiLW1J8JOeGaWiVDZaDNseBtYg-f58l5ZclJ-T-Ao2jBD3zzy5n0GSqrs6gkzlpm1fRvOeL-G-OpppGuhOAW1ARfZAIhF7-CjKx6kGSPyMkl6hpkTkWYlYdbxtQ</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          126.9456,37.53959,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>서대문마포</name>
+      <styleUrl>#line-0288D1-2000-nodesc</styleUrl>
+      <LineString>
+        <tessellate>1</tessellate>
+        <coordinates>
+          126.943781,37.592166,0
+          126.943274,37.592108,0
+          126.942628,37.591898,0
+          126.941475,37.591528,0
+          126.94146,37.59119,0
+          126.941952,37.590582,0
+          126.94252,37.589966,0
+          126.945067,37.587905,0
+          126.94715,37.585884,0
+          126.949277,37.583838,0
+          126.949805,37.583203,0
+          126.950745,37.581338,0
+          126.951556,37.580579,0
+          126.952818,37.579446,0
+          126.953908,37.578346,0
+          126.955664,37.576422,0
+          126.956273,37.575681,0
+          126.958155,37.574086,0
+          126.962078,37.570304,0
+          126.963016,37.569435,0
+          126.964147,37.56826,0
+          126.96613,37.56613,0
+          126.966232,37.565873,0
+          126.966248,37.565616,0
+          126.965614,37.564684,0
+          126.964627,37.563222,0
+          126.96349,37.561474,0
+          126.962535,37.559888,0
+          126.961763,37.559178,0
+          126.96098,37.558552,0
+          126.959735,37.5576,0
+          126.95888,37.557363,0
+          126.956083,37.557382,0
+          126.953523,37.557339,0
+          126.950973,37.557159,0
+          126.945863,37.556817,0
+          126.945884,37.552973,0
+          126.945702,37.55256,0
+          126.944935,37.551997,0
+          126.944404,37.551421,0
+          126.944114,37.550819,0
+          126.943856,37.55006,0
+          126.942816,37.54893,0
+          126.94184,37.547835,0
+          126.946402,37.545866,0
+          126.948683,37.544865,0
+          126.950825,37.54399,0
+          126.94998,37.542795,0
+          126.947927,37.541262,0
+          126.946862,37.540482,0
+          126.945375,37.539388,0
+        </coordinates>
+      </LineString>
+    </Placemark>
+  </Document>
+</kml>
