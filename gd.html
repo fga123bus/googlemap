@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>관악동작</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="arrow_box.css">
+
+</head>
+<body>
+<div class="container-fluid" id="map" style="width:100%;height:900px;"></div>    
+
+<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=f796c31fef72d1b97dce3af63888b489"></script>
+<script language="javascript" type="text/javascript" name="source" src="gd.js"></script>
+
+<script>
+
+var map = new daum.maps.Map(mapContainer, mapOption); // 지도를 생성합니다
+// 지도에 선을 표시합니다 
+polyline.setMap(map);  
+
+for (var i = 0; i < positions.length; i ++) {
+    var mapCustomOverlay = new daum.maps.CustomOverlay({
+    content: positions[i].content,
+    position: positions[i].latlng,
+    xAnchor: 0.5, // 커스텀 오버레이의 x축 위치입니다. 1에 가까울수록 왼쪽에 위치합니다. 기본값은 0.5 입니다
+    yAnchor: 2.0 // 커스텀 오버레이의 y축 위치입니다. 1에 가까울수록 위쪽에 위치합니다. 기본값은 0.5 입니다
+
+    });
+    mapCustomOverlay.setMap(map);
+}
+</script>
+
+<div class="modal fade" id="myModal1" role="dialog">
+        <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+        <div class="modal-header">
+        <h6 class="modal-title">1. 서울산업정보학교,삼성교(08:00)</h6>
+        </div>
+        <div class="modal-body">
+        <p>(08:00)이전에 나오셔야 탑승가능합니다.</p>
+        </div>
+        <div class="modal-footer">
+        <a class="btn btn-info btn-sm" href="http://map.daum.net/link/roadview/37.470876,126.940944" role="button">로드뷰 바로가기</a>
+        <a class="btn btn-info btn-sm" href="http://map.daum.net/link/to/1. 서울산업정보학교,삼성교(08:00),37.470876,126.940944" role="button">길찾기 바로가기</a>
+        <button type="button" class="btn btn-default btn-sm" data-dismiss="modal">닫기</button>
+        </div>
+        </div>
+        </div>
+        </div>
+
+        <div class="modal fade" id="myModal2" role="dialog">
+                <div class="modal-dialog">
+                <!-- Modal content-->
+                <div class="modal-content">
+                <div class="modal-header">
+                <h6 class="modal-title">2. 미림여자정보과학고(08:04)</h6>
+                </div>
+                <div class="modal-body">
+                <p>(08:04)이전에 나오셔야 탑승가능합니다.</p>
+                </div>
+                <div class="modal-footer">
+                <a class="btn btn-info btn-sm" href="http://map.daum.net/link/roadview/37.465628,126.931322" role="button">로드뷰 바로가기</a>
+                <a class="btn btn-info btn-sm" href="http://map.daum.net/link/to/2. 미림여자정보과학고(08:04),37.465628,126.931322" role="button">길찾기 바로가기</a>
+                <button type="button" class="btn btn-default btn-sm" data-dismiss="modal">닫기</button>
+                </div>
+                </div>
+                </div>
+                </div>
+                
+<div class="modal fade" id="myModal3" role="dialog">
+        <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+        <div class="modal-header">
+        <h6 class="modal-title">3. 난향동주민센터(08:09)</h6>
+        </div>
+        <div class="modal-body">
+        <p>(08:09)이전에 나오셔야 탑승가능합니다.</p>
+        </div>
+        <div class="modal-footer">
+        <a class="btn btn-info btn-sm" href="http://map.daum.net/link/roadview/37.461011,126.919145" role="button">로드뷰 바로가기</a>
+        <a class="btn btn-info btn-sm" href="http://map.daum.net/link/to/3. 난향동주민센터(08:09),37.461011,126.919145" role="button">길찾기 바로가기</a>
+        <button type="button" class="btn btn-default btn-sm" data-dismiss="modal">닫기</button>
+        </div>
+        </div>
+        </div>
+        </div>
+                        
+        <div class="modal fade" id="myModal4" role="dialog">
+                <div class="modal-dialog">
+                <!-- Modal content-->
+                <div class="modal-content">
+                <div class="modal-header">
+                <h6 class="modal-title">4. 우림시장 난곡보건분소(08:11)</h6>
+                </div>
+                <div class="modal-body">
+                <p>(08:11)이전에 나오셔야 탑승가능합니다.</p>
+                </div>
+                <div class="modal-footer">
+                <a class="btn btn-info btn-sm" href="http://map.daum.net/link/roadview/37.470518,126.919978" role="button">로드뷰 바로가기</a>
+                <a class="btn btn-info btn-sm" href="http://map.daum.net/link/to/4. 우림시장 난곡보건분소(08:11),37.470518,126.919978" role="button">길찾기 바로가기</a>
+                <button type="button" class="btn btn-default btn-sm" data-dismiss="modal">닫기</button>
+                </div>
+                </div>
+                </div>
+                </div>
+
+<div class="modal fade" id="myModal5" role="dialog">
+        <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+        <div class="modal-header">
+        <h6 class="modal-title">5. 난우초등학교(08:12)</h6>
+        </div>
+        <div class="modal-body">
+        <p>(08:12)이전에 나오셔야 탑승가능합니다.</p>
+        </div>
+        <div class="modal-footer">
+        <a class="btn btn-info btn-sm" href="http://map.daum.net/link/roadview/37.476017,126.917706" role="button">로드뷰 바로가기</a>
+        <a class="btn btn-info btn-sm" href="http://map.daum.net/link/to/5. 난우초등학교(08:12),37.476017,126.917706" role="button">길찾기 바로가기</a>
+        <button type="button" class="btn btn-default btn-sm" data-dismiss="modal">닫기</button>
+        </div>
+        </div>
+        </div>
+        </div>
+              
+    <div class="modal fade" id="myModal6" role="dialog">
+        <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+        <div class="modal-header">
+        <h6 class="modal-title">6.남서울중 성보중고</h6>
+        </div>
+        <div class="modal-body">
+        <p>(08:15)이전에 나오셔야 탑승가능합니다.</p>
+        </div>
+        <div class="modal-footer">
+        <a class="btn btn-info btn-sm" href="http://map.daum.net/link/roadview/37.48286,126.920793" role="button">로드뷰 바로가기</a>
+        <a class="btn btn-info btn-sm" href="http://map.daum.net/link/to/6.남서울중 성보중고,37.48286,126.920793" role="button">길찾기 바로가기</a>
+        <button type="button" class="btn btn-default btn-sm" data-dismiss="modal">닫기</button>
+        </div>
+        </div>
+        </div>
+        </div>
+
+<div class="modal fade" id="myModal7" role="dialog">
+        <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+        <div class="modal-header">
+        <h6 class="modal-title">7. 신림사거리신림역(08:18)</h6>
+        </div>
+        <div class="modal-body">
+        <p>(08:18)이전에 나오셔야 탑승가능합니다.</p>
+        </div>
+        <div class="modal-footer">
+        <a class="btn btn-info btn-sm" href="http://map.daum.net/link/roadview/37.483931,126.927948" role="button">로드뷰 바로가기</a>
+        <a class="btn btn-info btn-sm" href="http://map.daum.net/link/to/7. 신림사거리신림역(08:18),37.483931,126.927948" role="button">길찾기 바로가기</a>
+        <button type="button" class="btn btn-default btn-sm" data-dismiss="modal">닫기</button>
+        </div>
+        </div>
+        </div>
+        </div>
+              
+<div class="modal fade" id="myModal8" role="dialog">
+        <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+        <div class="modal-header">
+        <h6 class="modal-title">8. 보라매공원보라매병원(08:22)</h6>
+        </div>
+        <div class="modal-body">
+        <p>(08:22)이전에 나오셔야 탑승가능합니다.</p>
+        </div>
+        <div class="modal-footer">
+        <a class="btn btn-info btn-sm" href="http://map.daum.net/link/roadview/37.490418,126.927561" role="button">로드뷰 바로가기</a>
+        <a class="btn btn-info btn-sm" href="http://map.daum.net/link/to/8. 보라매공원보라매병원(08:22),37.490418,126.927561" role="button">길찾기 바로가기</a>
+        <button type="button" class="btn btn-default btn-sm" data-dismiss="modal">닫기</button>
+        </div>
+        </div>
+        </div>
+        </div>
+                
+<div class="modal fade" id="myModal9" role="dialog">
+        <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+        <div class="modal-header">
+        <h6 class="modal-title">9. 대림초등학교(08:26)</h6>
+        </div>
+        <div class="modal-body">
+        <p>(08:26)이전에 나오셔야 탑승가능합니다.</p>
+        </div>
+        <div class="modal-footer">
+        <a class="btn btn-info btn-sm" href="http://map.daum.net/link/roadview/37.499796,126.92606" role="button">로드뷰 바로가기</a>
+        <a class="btn btn-info btn-sm" href="http://map.daum.net/link/to/9. 대림초등학교(08:26),37.499796,126.92606" role="button">길찾기 바로가기</a>
+        <button type="button" class="btn btn-default btn-sm" data-dismiss="modal">닫기</button>
+        </div>
+        </div>
+        </div>
+        </div>
+                
+        
+</body>
+</html>

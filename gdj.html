@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>금천동작호</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="arrow_box.css">
+
+</head>
+<body>
+<div class="container-fluid" id="map" style="width:100%;height:900px;"></div>    
+
+<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=f796c31fef72d1b97dce3af63888b489"></script>
+<script language="javascript" type="text/javascript" name="source" src="gdj.js"></script>
+
+<script>
+
+var map = new daum.maps.Map(mapContainer, mapOption); // 지도를 생성합니다
+// 지도에 선을 표시합니다 
+polyline.setMap(map);  
+
+for (var i = 0; i < positions.length; i ++) {
+    var mapCustomOverlay = new daum.maps.CustomOverlay({
+    content: positions[i].content,
+    position: positions[i].latlng,
+    xAnchor: 0.5, // 커스텀 오버레이의 x축 위치입니다. 1에 가까울수록 왼쪽에 위치합니다. 기본값은 0.5 입니다
+    yAnchor: 2.0 // 커스텀 오버레이의 y축 위치입니다. 1에 가까울수록 위쪽에 위치합니다. 기본값은 0.5 입니다
+
+    });
+mapCustomOverlay.setMap(map);
+}
+</script>
+
+<div class="modal fade" id="myModal1" role="dialog">
+        <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+        <div class="modal-header">
+        <h6 class="modal-title">1. 박미마을(08:00)</h6>
+        </div>
+        <div class="modal-body">
+        <p>(08:00)이전에 나오셔야 탑승가능합니다.</p>
+        </div>
+        <div class="modal-footer">
+        <a class="btn btn-info btn-sm" href="http://map.daum.net/link/roadview/37.442777,126.903916" role="button">로드뷰 바로가기</a>
+        <a class="btn btn-info btn-sm" href="http://map.daum.net/link/to/1. 박미마을(08:00),37.442777,126.903916" role="button">길찾기 바로가기</a>
+        <button type="button" class="btn btn-default btn-sm" data-dismiss="modal">닫기</button>
+        </div>
+        </div>
+        </div>
+        </div>
+        
+        <div class="modal fade" id="myModal2" role="dialog">
+                <div class="modal-dialog">
+                <!-- Modal content-->
+                <div class="modal-content">
+                <div class="modal-header">
+                <h6 class="modal-title">2. 금천폭포공원(08:01)</h6>
+                </div>
+                <div class="modal-body">
+                <p>(08:01)이전에 나오셔야 탑승가능합니다.</p>
+                </div>
+                <div class="modal-footer">
+                <a class="btn btn-info btn-sm" href="http://map.daum.net/link/roadview/37.44728,126.903643" role="button">로드뷰 바로가기</a>
+                <a class="btn btn-info btn-sm" href="http://map.daum.net/link/to/2. 금천폭포공원(08:01),37.44728,126.903643" role="button">길찾기 바로가기</a>
+                <button type="button" class="btn btn-default btn-sm" data-dismiss="modal">닫기</button>
+                </div>
+                </div>
+                </div>
+                </div>
+
+        <div class="modal fade" id="myModal3" role="dialog">
+                <div class="modal-dialog">
+                <!-- Modal content-->
+                <div class="modal-content">
+                <div class="modal-header">
+                <h6 class="modal-title">3. 시흥초등학교</h6>
+                </div>
+                <div class="modal-body">
+                <p> 시흥초등학교이전에 나오셔야 탑승가능합니다.</p>
+                </div>
+                <div class="modal-footer">
+                <a class="btn btn-info btn-sm" href="http://map.daum.net/link/roadview/37.453468,126.904167" role="button">로드뷰 바로가기</a>
+                <a class="btn btn-info btn-sm" href="http://map.daum.net/link/to/3. 시흥초등학교,37.453468,126.904167" role="button">길찾기 바로가기</a>
+                <button type="button" class="btn btn-default btn-sm" data-dismiss="modal">닫기</button>
+                </div>
+                </div>
+                </div>
+                </div>
+                        
+    <div class="modal fade" id="myModal4" role="dialog">
+            <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+            <div class="modal-header">
+            <h6 class="modal-title">4. 무지개아파트(08:08)</h6>
+            </div>
+            <div class="modal-body">
+            <p>(08:08)이전에 나오셔야 탑승가능합니다.</p>
+            </div>
+            <div class="modal-footer">
+            <a class="btn btn-info btn-sm" href="http://map.daum.net/link/roadview/37.456878,126.898638" role="button">로드뷰 바로가기</a>
+            <a class="btn btn-info btn-sm" href="http://map.daum.net/link/to/4. 무지개아파트(08:08),37.456878,126.898638" role="button">길찾기 바로가기</a>
+            <button type="button" class="btn btn-default btn-sm" data-dismiss="modal">닫기</button>
+            </div>
+            </div>
+            </div>
+            </div>
+                        
+    <div class="modal fade" id="myModal5" role="dialog">
+            <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+            <div class="modal-header">
+            <h6 class="modal-title">5. 두산초등학교(08:11)</h6>
+            </div>
+            <div class="modal-body">
+            <p>(08:11)이전에 나오셔야 탑승가능합니다.</p>
+            </div>
+            <div class="modal-footer">
+            <a class="btn btn-info btn-sm" href="http://map.daum.net/link/roadview/37.466367,126.891457" role="button">로드뷰 바로가기</a>
+            <a class="btn btn-info btn-sm" href="http://map.daum.net/link/to/5. 두산초등학교(08:11),37.466367,126.891457" role="button">길찾기 바로가기</a>
+            <button type="button" class="btn btn-default btn-sm" data-dismiss="modal">닫기</button>
+            </div>
+            </div>
+            </div>
+            </div>
+                  
+    <div class="modal fade" id="myModal6" role="dialog">
+            <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+            <div class="modal-header">
+            <h6 class="modal-title">6. 문성초등학교(08:17)</h6>
+            </div>
+            <div class="modal-body">
+            <p>(08:17)이전에 나오셔야 탑승가능합니다.</p>
+            </div>
+            <div class="modal-footer">
+            <a class="btn btn-info btn-sm" href="http://map.daum.net/link/roadview/37.474512,126.898483" role="button">로드뷰 바로가기</a>
+            <a class="btn btn-info btn-sm" href="http://map.daum.net/link/to/6. 문성초등학교(08:17),37.474512,126.898483" role="button">길찾기 바로가기</a>
+            <button type="button" class="btn btn-default btn-sm" data-dismiss="modal">닫기</button>
+            </div>
+            </div>
+            </div>
+            </div>
+            
+    <div class="modal fade" id="myModal7" role="dialog">
+            <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+            <div class="modal-header">
+            <h6 class="modal-title">7. 신대방상원상떼빌(08:23)</h6>
+            </div>
+            <div class="modal-body">
+            <p>(08:23)이전에 나오셔야 탑승가능합니다.</p>
+            </div>
+            <div class="modal-footer">
+            <a class="btn btn-info btn-sm" href="http://map.daum.net/link/roadview/37.486587,126.904541" role="button">로드뷰 바로가기</a>
+            <a class="btn btn-info btn-sm" href="http://map.daum.net/link/to/7. 신대방상원상떼빌(08:23),37.486587,126.904541" role="button">길찾기 바로가기</a>
+            <button type="button" class="btn btn-default btn-sm" data-dismiss="modal">닫기</button>
+            </div>
+            </div>
+            </div>
+            </div>
+                    
+    <div class="modal fade" id="myModal8" role="dialog">
+            <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+            <div class="modal-header">
+            <h6 class="modal-title">8. 교수아파트(08:27)</h6>
+            </div>
+            <div class="modal-body">
+            <p>(08:27)이전에 나오셔야 탑승가능합니다.</p>
+            </div>
+            <div class="modal-footer">
+            <a class="btn btn-info btn-sm" href="http://map.daum.net/link/roadview/37.496332,126.913255" role="button">로드뷰 바로가기</a>
+            <a class="btn btn-info btn-sm" href="http://map.daum.net/link/to/8. 교수아파트(08:27),37.496332,126.913255" role="button">길찾기 바로가기</a>
+            <button type="button" class="btn btn-default btn-sm" data-dismiss="modal">닫기</button>
+            </div>
+            </div>
+            </div>
+            </div>
+                    
+    <div class="modal fade" id="myModal9" role="dialog">
+            <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+            <div class="modal-header">
+            <h6 class="modal-title">9. 보라매공원(08:28)</h6>
+            </div>
+            <div class="modal-body">
+            <p>(08:28)이전에 나오셔야 탑승가능합니다.</p>
+            </div>
+            <div class="modal-footer">
+            <a class="btn btn-info btn-sm" href="http://map.daum.net/link/roadview/37.496809,126.916313" role="button">로드뷰 바로가기</a>
+            <a class="btn btn-info btn-sm" href="http://map.daum.net/link/to/9. 보라매공원(08:28),37.496809,126.916313" role="button">길찾기 바로가기</a>
+            <button type="button" class="btn btn-default btn-sm" data-dismiss="modal">닫기</button>
+            </div>
+            </div>
+            </div>
+            </div>
+                  
+    <div class="modal fade" id="myModal10" role="dialog">
+            <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+            <div class="modal-header">
+            <h6 class="modal-title">10. 서울공고옆(08:31)</h6>
+            </div>
+            <div class="modal-body">
+            <p>(08:31)이전에 나오셔야 탑승가능합니다.</p>
+            </div>
+            <div class="modal-footer">
+            <a class="btn btn-info btn-sm" href="http://map.daum.net/link/roadview/37.502814,126.921562" role="button">로드뷰 바로가기</a>
+            <a class="btn btn-info btn-sm" href="http://map.daum.net/link/to/10. 서울공고옆(08:31),37.502814,126.921562" role="button">길찾기 바로가기</a>
+            <button type="button" class="btn btn-default btn-sm" data-dismiss="modal">닫기</button>
+            </div>
+            </div>
+            </div>
+            </div>
+                    
+            <div class="modal fade" id="myModal11" role="dialog">
+                    <div class="modal-dialog">
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                    <div class="modal-header">
+                    <h6 class="modal-title">11. 공군회관(08:33)</h6>
+                    </div>
+                    <div class="modal-body">
+                    <p>(08:33)이전에 나오셔야 탑승가능합니다.</p>
+                    </div>
+                    <div class="modal-footer">
+                    <a class="btn btn-info btn-sm" href="http://map.daum.net/link/roadview/37.510114,126.924615" role="button">로드뷰 바로가기</a>
+                    <a class="btn btn-info btn-sm" href="http://map.daum.net/link/to/11. 공군회관(08:33),37.510114,126.924615" role="button">길찾기 바로가기</a>
+                    <button type="button" class="btn btn-default btn-sm" data-dismiss="modal">닫기</button>
+                    </div>
+                    </div>
+                    </div>
+                    </div>
+                    
+
+</body>
+</html>
