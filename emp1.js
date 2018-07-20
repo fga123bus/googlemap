@@ -78,12 +78,22 @@ var positions = [
         content :'<a class="arrow_box" data-toggle="modal" href="#myModal3">3. 역촌역1번출구(08:05)</a>',
         latlng: new daum.maps.LatLng(37.605214,126.922235)
         },
+		{
+        title:'3-1.하늘애 주상복합근처',
+        content :'<a class="arrow_box" data-toggle="modal" href="#myModal31">3-1. 하늘애 주상복합 근처(08:05)</a>',
+        latlng: new daum.maps.LatLng(37.600312,126.918742)
+        },
         {
         title:'4.응암역.신사오거리',
         content :'<a class="arrow_box" data-toggle="modal" href="#myModal4">4. 응암역 신사오거리(08:09)</a>',
         latlng: new daum.maps.LatLng(37.597761,126.915204)
         },
         {
+        title:'4-1.신흥시장 정류장',
+        content :'<a class="arrow_box" data-toggle="modal" href="#myModal41">4-1. 신흥시장 정류장(08:09)</a>',
+        latlng: new daum.maps.LatLng(37.595381,126.914644)
+        },
+		{
         title:'5.새절역',
         content :'<a class="arrow_box" data-toggle="modal" href="#myModal5">5. 새절역(08:11)</a>',
         latlng: new daum.maps.LatLng(37.591207,126.913494)
@@ -102,6 +112,11 @@ var positions = [
         title:'8.망원시장.망원동월드컵시장입구',
         content :'<a class="arrow_box" data-toggle="modal" href="#myModal8">8. 망원시장 망원동월드컵시장입구(08:26)</a>',
         latlng: new daum.maps.LatLng(37.557452,126.908622)
+        },
+		{
+        title:'8-1.망원동물병원 근처',
+        content :'<a class="arrow_box" data-toggle="modal" href="#myModal81">8-1 망원동물병원 근처(08:26)</a>',
+        latlng: new daum.maps.LatLng(37.554809,126.911055)
         },
         {
         title:'9.합정역',
