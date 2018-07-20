@@ -132,7 +132,7 @@ var positions = [
         {
         title:'7-1.영등포농협본점',
         content :'<a class="arrow_box" data-toggle="modal" href="#myModal71">7-1.영등포농협본점</a>',
-        latlng: new daum.maps.LatLng(37.5108566,126.9126887)
+        latlng: new daum.maps.LatLng(37.511072, 126.912686)
         },
 		{
         title:'8.대신시장',
