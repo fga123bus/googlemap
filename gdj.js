@@ -5,7 +5,7 @@ var mapContainer = document.getElementById('map'), // 지도를 표시할 div
     };
 
 var linePath = [
-    new daum.maps.LatLng(37.442811,126.903886),
+new daum.maps.LatLng(37.442811,126.903886),
 new daum.maps.LatLng(37.444352,126.904034),
 new daum.maps.LatLng(37.445128,126.90407),
 new daum.maps.LatLng(37.446128,126.903977),
@@ -55,7 +55,12 @@ new daum.maps.LatLng(37.497538,126.919566),
 new daum.maps.LatLng(37.497869,126.920097),
 new daum.maps.LatLng(37.498427,126.920277),
 new daum.maps.LatLng(37.499982,126.920367),
-new daum.maps.LatLng(37.51039,126.924577)
+new daum.maps.LatLng(37.51039,126.924577),
+new daum.maps.LatLng(37.5123896,126.9253063),
+new daum.maps.LatLng(37.5147725,126.9270444),
+new daum.maps.LatLng(37.516951,126.9284821),
+new daum.maps.LatLng(37.5174489,126.928246),
+new daum.maps.LatLng(37.5184785,126.927259)
 
 
 ];
@@ -124,8 +129,12 @@ var positions = [
         title:'11.공군회관',
         content :'<a class="arrow_box" data-toggle="modal" href="#myModal11">11. 공군회관(08:33)</a>',
         latlng: new daum.maps.LatLng(37.510114,126.924615)
+        },
+        {
+        title:'11-1.여의도자이아파트 건너편',
+        content :'<a class="arrow_box" data-toggle="modal" href="#myModal111">11-1. 여의도자이아파트 건너편(08:33)</a>',
+        latlng: new daum.maps.LatLng(37.442811,126.903886)
         }
-        
 
 ];
 
