@@ -23,7 +23,7 @@
 var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
     mapOption = { 
         center: new daum.maps.LatLng(37.530753,126.923268), // 지도의 중심좌표
-        level: 7 // 지도의 확대 레벨
+        level: 8 // 지도의 확대 레벨
     };
 
 var map = new daum.maps.Map(mapContainer, mapOption); // 지도를 생성합니다
@@ -78,7 +78,7 @@ for (var i = 0; i < positions.length; i ++) {
               <h6 class="modal-title">PBS셔틀버스 이용안내 (7월 27,28일만 08:00, 17:00 운행)</h6>
             </div>
             <div class="modal-body">
-              <p>지도상에 표시된 <b>"차량의 이름"</b>을 누르면<br><b>해당 차량의 오픈카톡</b>으로 이동합니다.<br><br>
+              <p>지도상에 표시된 <b>"차량의 이름"</b>을 누르면<br><b>해당 차량의 사진</b>을 볼 수 있고<br>운행카톡방과 상세노선도를 볼 수 있습니다.<br>
                 각 차량별 오픈카톡에서 <B>"탑승신청 메시지"</B>를 남길 수 있습니다.<br>
                 (학생이름,학년,탑승위치,보호자성명 및 연락처)<br><br>
                 <b>운행당일에는</b>버스운행상황을 빠르게 공유할 수 있습니다.</p>
