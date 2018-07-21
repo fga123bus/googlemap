@@ -122,6 +122,11 @@ var positions = [
         content :'<a class="arrow_box" data-toggle="modal" href="#myModal2">2. 미림여자정보과학고(08:04)</a>',
         latlng: new daum.maps.LatLng(37.465628,126.931322)
         },
+		{
+        title:'2-1.삼성산주공아파트 입구',
+        content :'<a class="arrow_box" data-toggle="modal" href="#myModal21">2-1.삼성산 주공아파트 입구(08:04)</a>',
+        latlng: new daum.maps.LatLng(37.461089,126.925567)
+        },
         {
         title:'3.난향동주민센터',
         content :'<a class="arrow_box" data-toggle="modal" href="#myModal3">3. 난향동주민센터(08:09)</a>',
