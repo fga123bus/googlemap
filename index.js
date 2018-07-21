@@ -1029,77 +1029,92 @@ strokeStyle: 'solid' // 선의 스타일입니다
 var positions = [
     {
         title:'강서양천1호',
-        content: '<a class="btn btn-info btn-sm" href="https://open.kakao.com/o/gecXkUP" role="button">강서양천1호</a>',
+        content :'<a class="btn btn-info btn-sm" data-toggle="modal" href="#myModal_gy1">강서양천1호</a>',
+		//content: '<a class="btn btn-info btn-sm" href="https://open.kakao.com/o/gecXkUP" role="button">강서양천1호</a>',
         latlng: new daum.maps.LatLng(37.572534,126.806045)
         },
         {
         title:'강서양천2호',
-        content: '<a class="btn btn-info btn-sm" href="https://open.kakao.com/o/glhflUP" role="button">강서양천2호</a>',
+        content :'<a class="btn btn-info btn-sm" data-toggle="modal" href="#myModal_gy2">강서양천2호</a>',
+		//content: '<a class="btn btn-info btn-sm" href="https://open.kakao.com/o/glhflUP" role="button">강서양천2호</a>',
         latlng: new daum.maps.LatLng(37.561125,126.81166)
         },
         {
         title:'관악동작호',
-        content: '<a class="btn btn-info btn-sm" href="https://open.kakao.com/o/gHkulUP" role="button">관악동작호</a>',
+        content :'<a class="btn btn-info btn-sm" data-toggle="modal" href="#myModal_gd">관악동작호</a>',
+		//content: '<a class="btn btn-info btn-sm" href="https://open.kakao.com/o/gHkulUP" role="button">관악동작호</a>',
         latlng: new daum.maps.LatLng(37.470863,126.941)
         },
         {
         title:'광명광명호',
-        content: '<a class="btn btn-info btn-sm" href="https://open.kakao.com/o/gKPMlUP" role="button">광명광명호</a>',
+        content :'<a class="btn btn-info btn-sm" data-toggle="modal" href="#myModal_gmgm">광명광명호</a>',
+		//content: '<a class="btn btn-info btn-sm" href="https://open.kakao.com/o/gKPMlUP" role="button">광명광명호</a>',
         latlng: new daum.maps.LatLng(37.449771,126.88718)
         },
         {
         title:'구로영등포호',
-        content: '<a class="btn btn-info btn-sm" href="https://open.kakao.com/o/gMO4lUP" role="button">구로영등포호</a>',
+        content :'<a class="btn btn-info btn-sm" data-toggle="modal" href="#myModal_gyd">구로영등포호</a>',
+		//content: '<a class="btn btn-info btn-sm" href="https://open.kakao.com/o/gMO4lUP" role="button">구로영등포호</a>',
         latlng: new daum.maps.LatLng(37.484946,126.886816)
         },
         {
         title:'금천동작호',
-        content: '<a class="btn btn-info btn-sm" href="https://open.kakao.com/o/gfUrmUP" role="button">금천동작호</a>',
+        content :'<a class="btn btn-info btn-sm" data-toggle="modal" href="#myModal_gdj">금천동작호</a>',
+		//content: '<a class="btn btn-info btn-sm" href="https://open.kakao.com/o/gfUrmUP" role="button">금천동작호</a>',
         latlng: new daum.maps.LatLng(37.442811,126.903886)
         },
         {
         title:'부천영등포호',
-        content: '<a class="btn btn-info btn-sm" href="https://open.kakao.com/o/guGPmUP" role="button">부천영등포호</a>',
+        content :'<a class="btn btn-info btn-sm" data-toggle="modal" href="#myModal_bcy">부천영등포호</a>',
+		//content: '<a class="btn btn-info btn-sm" href="https://open.kakao.com/o/guGPmUP" role="button">부천영등포호</a>',
         latlng: new daum.maps.LatLng(37.489246,126.817638)
         },
         {
         title:'서초동작호',
-        content: '<a class="btn btn-info btn-sm" href="https://open.kakao.com/o/g9F3mUP" role="button">서초동작호</a>',
+        content :'<a class="btn btn-info btn-sm" data-toggle="modal" href="#myModal_sd">서초동작호</a>',
+		//content: '<a class="btn btn-info btn-sm" href="https://open.kakao.com/o/g9F3mUP" role="button">서초동작호</a>',
         latlng: new daum.maps.LatLng(37.476584,126.982636)
         },
         {
         title:'양천영등포1호',
-        content: '<a class="btn btn-info btn-sm" href="https://open.kakao.com/o/g2vlnUP" role="button">양천영등포1호</a>',
+		content :'<a class="btn btn-info btn-sm" data-toggle="modal" href="#myModal_ydp1">양천영등포1호</a>',
+        //content: '<a class="btn btn-info btn-sm" href="https://open.kakao.com/o/g2vlnUP" role="button">양천영등포1호</a>',
         latlng: new daum.maps.LatLng(37.541216,126.830577)
         },
         {
         title:'양천영등포2호',
-        content: '<a class="btn btn-info btn-sm" href="https://open.kakao.com/o/gP2AnUP" role="button">양천영등포2호</a>',
+        content :'<a class="btn btn-info btn-sm" data-toggle="modal" href="#myModal_ydp2">양천영등포2호</a>',
+		//content: '<a class="btn btn-info btn-sm" href="https://open.kakao.com/o/gP2AnUP" role="button">양천영등포2호</a>',
         latlng: new daum.maps.LatLng(37.515537,126.83979)
         },
         {
         title:'강북용산호',
-        content: '<a class="btn btn-info btn-sm" href="https://open.kakao.com/o/guQ8qUP" role="button">강북용산호</a>',
+        content :'<a class="btn btn-info btn-sm" data-toggle="modal" href="#myModal_gbys">강북용산호</a>',
+		//content: '<a class="btn btn-info btn-sm" href="https://open.kakao.com/o/guQ8qUP" role="button">강북용산호</a>',
         latlng: new daum.maps.LatLng(37.6081801,127.0156002)
         },
         {
         title:'마포영등포호',
-        content: '<a class="btn btn-info btn-sm" href="https://open.kakao.com/o/gfqorUP" role="button">마포영등포호</a>',
+        content :'<a class="btn btn-info btn-sm" data-toggle="modal" href="#myModal_mpyd">마포영등포호</a>',
+		//content: '<a class="btn btn-info btn-sm" href="https://open.kakao.com/o/gfqorUP" role="button">마포영등포호</a>',
         latlng: new daum.maps.LatLng(37.585352,126.879677)
         },
         {
         title:'서대문마포호',
-        content: '<a class="btn btn-info btn-sm" href="https://open.kakao.com/o/gVsArUP" role="button">서대문마포호</a>',
+		content :'<a class="btn btn-info btn-sm" data-toggle="modal" href="#myModal_sdmp">서대문마포호</a>',
+        //content: '<a class="btn btn-info btn-sm" href="https://open.kakao.com/o/gVsArUP" role="button">서대문마포호</a>',
         latlng: new daum.maps.LatLng(37.592166,126.943781)
         },
         {
         title:'은평마포1호',
-        content: '<a class="btn btn-info btn-sm" href="https://open.kakao.com/o/gQOUrUP" role="button">은평마포1호</a>',
+        content :'<a class="btn btn-info btn-sm" data-toggle="modal" href="#myModal_emp1">은평마포1호</a>',
+		//content: '<a class="btn btn-info btn-sm" href="https://open.kakao.com/o/gQOUrUP" role="button">은평마포1호</a>',
         latlng: new daum.maps.LatLng(37.601022,126.933717)
         },
         {
         title:'은평마포2호',
-        content: '<a class="btn btn-info btn-sm" href="https://open.kakao.com/o/g47fsUP" role="button">은평마포2호</a>',
+        content :'<a class="btn btn-info btn-sm" data-toggle="modal" href="#myModal_emp2">은평마포2호</a>',
+		//content: '<a class="btn btn-info btn-sm" href="https://open.kakao.com/o/g47fsUP" role="button">은평마포2호</a>',
         latlng: new daum.maps.LatLng(37.604665,126.910396)
         },
         {
