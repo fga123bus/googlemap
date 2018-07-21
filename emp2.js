@@ -5,8 +5,24 @@ var mapContainer = document.getElementById('map'), // 지도를 표시할 div
     };
 
 var linePath = [
-    new daum.maps.LatLng(37.6114726,126.9111415),
-    new daum.maps.LatLng(37.604665,126.910396),
+    new daum.maps.LatLng(37.6214252,126.9263792),
+new daum.maps.LatLng(37.6206222,126.9248021),
+new daum.maps.LatLng(37.6203927,126.9244534),
+new daum.maps.LatLng(37.6200613,126.9234878),
+new daum.maps.LatLng(37.6197724,126.9229245),
+new daum.maps.LatLng(37.6192582,126.9224471),
+new daum.maps.LatLng(37.6190883,126.9221306),
+new daum.maps.LatLng(37.6188418,126.921165),
+new daum.maps.LatLng(37.6187314,126.9208431),
+new daum.maps.LatLng(37.6185486,126.9203925),
+new daum.maps.LatLng(37.6184127,126.9201243),
+new daum.maps.LatLng(37.6149538,126.9178927),
+new daum.maps.LatLng(37.6112568,126.9172812),
+new daum.maps.LatLng(37.6123787,126.9153929),
+new daum.maps.LatLng(37.6137385,126.9115734),
+new daum.maps.LatLng(37.6060934,126.9105703),
+new daum.maps.LatLng(37.6056855,126.9105059),
+new daum.maps.LatLng(37.604665,126.910396),
 new daum.maps.LatLng(37.602394,126.910301),
 new daum.maps.LatLng(37.601194,126.91025),
 new daum.maps.LatLng(37.599969,126.910195),
@@ -50,7 +66,12 @@ strokeStyle: 'solid' // 선의 스타일입니다
 });
 
 var positions = [
-    {
+        {
+        title:'-1.불광지구대',
+        content :'<a class="arrow_box" data-toggle="modal" href="#myModal01">-1. 블광지구대(07:50)</a>',
+        latlng: new daum.maps.LatLng(37.6214252,126.9263792)
+        },
+		{
         title:'0.구산치안센터',
         content :'<a class="arrow_box" data-toggle="modal" href="#myModal0">0. 구산치안센터(08:00)</a>',
         latlng: new daum.maps.LatLng(37.6114726,126.9111415)
