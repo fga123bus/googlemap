@@ -68,7 +68,7 @@ strokeStyle: 'solid' // 선의 스타일입니다
 var positions = [
         {
         title:'-1.불광지구대',
-        content :'<a class="arrow_box" data-toggle="modal" href="#myModal01">-1. 블광지구대(07:50)</a>',
+        content :'<a class="arrow_box" data-toggle="modal" href="#myModal01">-1. 불광지구대(07:50)</a>',
         latlng: new daum.maps.LatLng(37.6214252,126.9263792)
         },
 		{
