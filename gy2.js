@@ -1,7 +1,7 @@
 var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
     mapOption = { 
         center: new daum.maps.LatLng(37.561125,126.81166), // 지도의 중심좌표
-        level: 6 // 지도의 확대 레벨
+        level: 7 // 지도의 확대 레벨
     };
 
 var linePath = [
