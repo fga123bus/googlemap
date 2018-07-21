@@ -131,8 +131,8 @@ var positions = [
         latlng: new daum.maps.LatLng(37.510114,126.924615)
         },
         {
-        title:'11-1.여의도자이아파트 건너편',
-        content :'<a class="arrow_box" data-toggle="modal" href="#myModal111">11-1. 여의도자이아파트 건너편(08:33)</a>',
+        title:'12.여의도자이아파트 건너편',
+        content :'<a class="arrow_box" data-toggle="modal" href="#myModal12">12. 여의도자이아파트 건너편(08:33)</a>',
         latlng: new daum.maps.LatLng(37.442811,126.903886)
         }
 
