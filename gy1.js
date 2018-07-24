@@ -74,7 +74,7 @@ var positions = [
     },
 	{
         title: '1-1.방화현대2차아파트',
-        content :'<a class="arrow_box" data-toggle="modal" href="#myModal1">1-1. 방화현대2차아파트(08:00)</a>',
+        content :'<a class="arrow_box" data-toggle="modal" href="#myModal11">1-1. 방화현대2차아파트(08:00)</a>',
         latlng: new daum.maps.LatLng(37.573226,126.819349)
 
     },
