@@ -109,6 +109,11 @@ var positions = [
         content :'<a class="arrow_box" data-toggle="modal" href="#myModal3">3.오류남초등학교 후문</a>',
         latlng: new daum.maps.LatLng(37.489738,126.837735)
         },
+		{
+        title:'3-1.씨티월드',
+        content :'<a class="arrow_box" data-toggle="modal" href="#myModal31">3-1.시티월드</a>',
+        latlng: new daum.maps.LatLng(37.494452,126.840659)
+        },
         {
         title:'4.개봉사거리',
         content :'<a class="arrow_box" data-toggle="modal" href="#myModal4">4.개봉사거리</a>',
