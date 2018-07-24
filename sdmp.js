@@ -74,6 +74,11 @@ var positions = [
         content :'<a class="arrow_box" data-toggle="modal" href="#myModal1">1. 홍제초등학교정문(08:00)</a>',
         latlng: new daum.maps.LatLng(37.592291,126.943858)
         },
+		{
+        title:'1-1.홍제역4번출구',
+        content :'<a class="arrow_box" data-toggle="modal" href="#myModal1">1-1. 홍제역4번출구(08:00)</a>',
+        latlng: new daum.maps.LatLng(37.5895524,126.9429843)
+        },
         {
         title:'2.안산초등학교정문',
         content :'<a class="arrow_box" data-toggle="modal" href="#myModal2">2. 안산초등학교정문(08:06)</a>',
