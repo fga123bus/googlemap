@@ -68,6 +68,11 @@ var positions = [
         content :'<a class="arrow_box" data-toggle="modal" href="#myModal1">1. 녹번역(08:00)</a>',
         latlng: new daum.maps.LatLng(37.601064,126.933674)
         },
+		{
+        title:'1-1.은평구청근처',
+        content :'<a class="arrow_box" data-toggle="modal" href="#myModal11">1-1. 은평구청근처(08:00)</a>',
+        latlng: new daum.maps.LatLng(37.601367,126.930573)
+        },
         {
         title:'2.녹번초등학교.서대문세무서별관',
         content :'<a class="arrow_box" data-toggle="modal" href="#myModal2">2. 녹번초등학교서대문세무서별관(08:03)</a>',
