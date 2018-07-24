@@ -103,6 +103,11 @@ var positions = [
         content :'<a class="arrow_box" data-toggle="modal" href="#myModal10">10. 문래역(08:43)</a>',
         latlng: new daum.maps.LatLng(37.519034,126.89436)
         },
+		{
+        title:'10-1.영등포시장역2번출구',
+        content :'<a class="arrow_box" data-toggle="modal" href="#myModal101">10-1.영등포시장역2번출구(08:43)</a>',
+        latlng: new daum.maps.LatLng(37.522956,126.905253)
+        },
         {
         title:'11.신화병원',
         content :'<a class="arrow_box" data-toggle="modal" href="#myModal11">11. 신화병원(08:49)</a>',
