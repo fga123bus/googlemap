@@ -82,6 +82,11 @@ var positions = [
         content :'<a class="arrow_box" data-toggle="modal" href="#myModal3">3. DMC역공항철도DMC역8번출구(08:08)</a>',
         latlng: new daum.maps.LatLng(37.577006,126.898102)
         },
+		{
+        title:'3-1.참누리아파트',
+        content :'<a class="arrow_box" data-toggle="modal" href="#myModal31">3. 참누리아파트(08:08)</a>',
+        latlng: new daum.maps.LatLng(37.572680,126.905153)
+        },
         {
         title:'4.성산소방파출소',
         content :'<a class="arrow_box" data-toggle="modal" href="#myModal4">4. 성산소방파출소(08:12)</a>',
