@@ -80,6 +80,11 @@ var positions = [
         content :'<a class="arrow_box" data-toggle="modal" href="#myModal6">6. 신영초교(08:13)</a>',
         latlng: new daum.maps.LatLng(37.499024,126.896388)
         },
+		{
+        title:'6-1. 신길건영아파트부근',
+        content :'<a class="arrow_box" data-toggle="modal" href="#myModal6">6-1. 신길건영아파트부근(08:13)</a>',
+        latlng: new daum.maps.LatLng(37.503605,126.901844)
+        },
         {
         title:'7.대영초중고',
         content :'<a class="arrow_box" data-toggle="modal" href="#myModal7">7. 대영초중고(08:17)</a>',
