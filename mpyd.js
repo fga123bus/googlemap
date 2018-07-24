@@ -84,7 +84,7 @@ var positions = [
         },
 		{
         title:'3-1.참누리아파트',
-        content :'<a class="arrow_box" data-toggle="modal" href="#myModal31">3. 참누리아파트(08:08)</a>',
+        content :'<a class="arrow_box" data-toggle="modal" href="#myModal31">3-1. 참누리아파트(08:08)</a>',
         latlng: new daum.maps.LatLng(37.572680,126.905153)
         },
         {
