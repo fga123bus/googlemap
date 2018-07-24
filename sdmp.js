@@ -76,7 +76,7 @@ var positions = [
         },
 		{
         title:'1-1.홍제역4번출구',
-        content :'<a class="arrow_box" data-toggle="modal" href="#myModal1">1-1. 홍제역4번출구(08:00)</a>',
+        content :'<a class="arrow_box" data-toggle="modal" href="#myModal11">1-1. 홍제역4번출구(08:00)</a>',
         latlng: new daum.maps.LatLng(37.5895524,126.9429843)
         },
         {
