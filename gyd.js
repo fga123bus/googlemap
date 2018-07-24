@@ -82,7 +82,7 @@ var positions = [
         },
 		{
         title:'6-1. 신길건영아파트부근',
-        content :'<a class="arrow_box" data-toggle="modal" href="#myModal6">6-1. 신길건영아파트부근(08:13)</a>',
+        content :'<a class="arrow_box" data-toggle="modal" href="#myModal61">6-1. 신길건영아파트부근(08:13)</a>',
         latlng: new daum.maps.LatLng(37.503605,126.901844)
         },
         {
