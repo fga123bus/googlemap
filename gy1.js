@@ -72,6 +72,12 @@ var positions = [
         latlng: new daum.maps.LatLng(37.572474,126.806125)
 
     },
+	{
+        title: '1-1.방화현대2차아파트',
+        content :'<a class="arrow_box" data-toggle="modal" href="#myModal1">1-1. 방화현대2차아파트(08:00)</a>',
+        latlng: new daum.maps.LatLng(37.573226,126.819349)
+
+    },
     {
         title: '2.양천초,겸재정선미술관',
         content :'<a class="arrow_box" data-toggle="modal" href="#myModal2">2. 양천초,겸재정선기념관(08:09)</a>',
