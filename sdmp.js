@@ -147,12 +147,12 @@ var positions = [
         },
 		{
         title:'9-1.신공덕레미안2차202동앞',
-        content :'<a class="arrow_box" data-toggle="modal" href="#myModal91">9-1. 신공덕레미안2차202동앞(08:24)</a>',
+        content :'<a class="arrow_box" data-toggle="modal" href="#myModal91">9-1. 신공덕레미안2차202동앞(08:27)</a>',
         latlng: new daum.maps.LatLng(37.54675,126.95757)
         },
         {
         title:'10.마포역',
-        content :'<a class="arrow_box" data-toggle="modal" href="#myModal10">10. 마포역(08:26)</a>',
+        content :'<a class="arrow_box" data-toggle="modal" href="#myModal10">10. 마포역(08:33)</a>',
         latlng: new daum.maps.LatLng(37.53959,126.9456)
         }
 
