@@ -109,9 +109,9 @@ strokeStyle: 'solid' // 선의 스타일입니다
 
 var positions = [
     {
-        title:'1.열매교회',
-        content :'<a class="arrow_box" data-toggle="modal" href="#myModal1">1.열매교회(08:00)</a>',
-        latlng: new daum.maps.LatLng(37.608898,127.015388)
+        title:'1.숭덕초',
+        content :'<a class="arrow_box" data-toggle="modal" href="#myModal1">1.숭덕초교부근(08:00)</a>',
+        latlng: new daum.maps.LatLng(37.6037603,127.0147794)
         },
         {
         title:'2.돈암사거리,성신여대입구',
