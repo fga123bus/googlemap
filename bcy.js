@@ -103,7 +103,7 @@ strokeStyle: 'solid' // 선의 스타일입니다
 });
 
 var polyline2 = new daum.maps.Polyline({
-path: linePath, // 선을 구성하는 좌표배열 입니다
+path: linePath2, // 선을 구성하는 좌표배열 입니다
 strokeWeight: 5, // 선의 두께 입니다
 strokeColor: '#FF0000', // 선의 색깔입니다
 strokeOpacity: 0.9, // 선의 불투명도 입니다 1에서 0 사이의 값이며 0에 가까울수록 투명합니다
@@ -124,7 +124,7 @@ var positions = [
 		{
         title:'2-1.서울가든빌라',
         content :'<a class="arrow_box" data-toggle="modal" href="#myModal21">2-1.서울가든빌라</a>',
-        latlng: new daum.maps.LatLng(37.492519,126.823578)
+        latlng: new daum.maps.LatLng(37.49155,126.8319)
         },
         {
         title:'3.오류남초등학교후문',
