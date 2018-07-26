@@ -29,6 +29,7 @@ var mapContainer = document.getElementById('map'), // 지도를 표시할 div
 var map = new daum.maps.Map(mapContainer, mapOption); // 지도를 생성합니다
 // 지도에 선을 표시합니다 
 polyline.setMap(map);
+polyline2.setMap(map);
 
 for (var i = 0; i < positions.length; i ++) {
     
@@ -85,6 +86,27 @@ map.addControl(zoomControl, daum.maps.ControlPosition.RIGHT);
                 </div>
                 </div>
                 </div>
+				
+				<div class="modal fade" id="myModal21" role="dialog">
+                <div class="modal-dialog">
+                <!-- Modal content-->
+                <div class="modal-content">
+                <div class="modal-header">
+                <h6 class="modal-title">2-1. 서울가든빌라(08:07)</h6>
+                </div>
+                <div class="modal-body">
+                <p>(08:07)이전에 나오셔야 탑승가능합니다.<br>윤지환-보호자님 <a href="tel:01084820566">윤순신</a>,</p>
+                </div>
+                <div class="modal-footer">
+                <a class="btn btn-info btn-sm" target="_blank" href="http://map.daum.net/link/roadview/37.492519,126.823578" role="button">주변사진 바로가기</a>
+                <a class="btn btn-info btn-sm" href="daummaps://look?p=37.492519,126.823578" role="button">앱(카카오맵) 길찾기</a>
+                <button type="button" class="btn btn-default btn-sm" data-dismiss="modal">닫기</button>
+                </div>
+                </div>
+                </div>
+                </div>
+				
+				
                         
                 <div class="modal fade" id="myModal3" role="dialog">
                         <div class="modal-dialog">
