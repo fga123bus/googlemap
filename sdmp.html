@@ -24,7 +24,6 @@ var map = new daum.maps.Map(mapContainer, mapOption); // 지도를 생성합니�
 polyline.setMap(map); 
 polyline2.setMap(map);
 
-
 for (var i = 0; i < positions.length; i ++) {
     var mapCustomOverlay = new daum.maps.CustomOverlay({
     content: positions[i].content,
