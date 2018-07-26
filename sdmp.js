@@ -73,7 +73,6 @@ new daum.maps.LatLng(37.5452791,126.9556528),
 new daum.maps.LatLng(37.5447389,126.9550198),
 new daum.maps.LatLng(37.544437,126.9536573),
 new daum.maps.LatLng(37.5438713,126.9507337)
-
 ];
 
 
@@ -95,7 +94,7 @@ strokeStyle: 'solid' // 선의 스타일입니다
 });
 
 var positions = [
-    {
+        {
         title:'1.홍제초등학교정문',
         content :'<a class="arrow_box" data-toggle="modal" href="#myModal1">1. 홍제초등학교정문(08:00)</a>',
         latlng: new daum.maps.LatLng(37.592291,126.943858)
