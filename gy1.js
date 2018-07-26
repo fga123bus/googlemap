@@ -132,12 +132,8 @@ var positions = [
         title: '8.염창역',
         content :'<a class="arrow_box" data-toggle="modal" href="#myModal8">8. 염창역3번출구(08:28)</a>',
         latlng: new daum.maps.LatLng(37.546768,126.874937)
-    },
-    {
-        title: '4.가양역 우성아파트',
-        latlng: new daum.maps.LatLng(37.561317,126.854381)
-
     }
+    
 
 ];
 
