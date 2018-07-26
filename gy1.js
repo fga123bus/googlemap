@@ -57,6 +57,7 @@ var linePath = [
 ];
 
 var linePath2 = [
+
 new daum.maps.LatLng(37.5643357,126.848799),
 new daum.maps.LatLng(37.566938,126.8505907),
 new daum.maps.LatLng(37.5672952,126.8508589),
@@ -65,6 +66,7 @@ new daum.maps.LatLng(37.5657304,126.8527472),
 new daum.maps.LatLng(37.5651096,126.8537128),
 new daum.maps.LatLng(37.5640125,126.852715),
 new daum.maps.LatLng(37.5628474,126.8516636)
+
 ];
 
 // 지도에 표시할 선을 생성합니다
