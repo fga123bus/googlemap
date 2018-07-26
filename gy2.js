@@ -62,7 +62,7 @@ var positions = [
     },
 	{
     title: '1-1.마곡엠밸리',
-    content :'<a class="arrow_box" data-toggle="modal" href="#myModal1">1-1. 마곡엠밸리(08:00)</a>',
+    content :'<a class="arrow_box" data-toggle="modal" href="#myModal11">1-1. 마곡엠밸리(08:00)</a>',
     latlng: new daum.maps.LatLng(37.5600697,126.8217914)
     },
     {
