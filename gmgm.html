@@ -33,6 +33,10 @@ for (var i = 0; i < positions.length; i ++) {
     });
 mapCustomOverlay.setMap(map);
 }
+
+var zoomControl = new daum.maps.ZoomControl();
+map.addControl(zoomControl, daum.maps.ControlPosition.RIGHT);
+
 </script>
 
 <div class="modal fade" id="myModal1" role="dialog">

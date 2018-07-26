@@ -33,6 +33,10 @@ for (var i = 0; i < positions.length; i ++) {
     });
 mapCustomOverlay.setMap(map);
 }
+
+var zoomControl = new daum.maps.ZoomControl();
+map.addControl(zoomControl, daum.maps.ControlPosition.RIGHT);
+
 </script>
 
 <div class="modal fade" id="myModal1" role="dialog">
@@ -40,7 +44,7 @@ mapCustomOverlay.setMap(map);
     <!-- Modal content-->
     <div class="modal-content">
     <div class="modal-header">
-    <h6 class="modal-title">1.열매교회(08:00)</h6>
+    <h6 class="modal-title">1.롯데캐슬골든힐스(08:00)</h6>
     </div>
     <div class="modal-body">
     <p>	(08:00)이전에 나오셔야 탑승가능합니다.</p>
