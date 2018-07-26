@@ -60,6 +60,11 @@ var positions = [
     content :'<a class="arrow_box" data-toggle="modal" href="#myModal1">1. 송정역3번출구(08:00)</a>',
     latlng: new daum.maps.LatLng(37.561087,126.811601)
     },
+	{
+    title: '1-1.마곡엠밸리',
+    content :'<a class="arrow_box" data-toggle="modal" href="#myModal1">1-1. 마곡엠밸리(08:00)</a>',
+    latlng: new daum.maps.LatLng(37.5600697,126.8217914)
+    },
     {
     title: '금요일 귀가하차만_마곡힐스테이트 부근',
     content :'<a class="arrow_box" data-toggle="modal" href="#myModal98">금요일 귀가시만 운영_마곡힐스테이트</a>',
