@@ -56,9 +56,28 @@ var linePath = [
 
 ];
 
+var linePath2 = [
+new daum.maps.LatLng(37.5643357,126.848799)
+new daum.maps.LatLng(37.566938,126.8505907)
+new daum.maps.LatLng(37.5672952,126.8508589)
+new daum.maps.LatLng(37.5665893,126.8516529)
+new daum.maps.LatLng(37.5657304,126.8527472)
+new daum.maps.LatLng(37.5651096,126.8537128)
+new daum.maps.LatLng(37.5640125,126.852715)
+new daum.maps.LatLng(37.5628474,126.8516636)
+];
+
 // 지도에 표시할 선을 생성합니다
 var polyline = new daum.maps.Polyline({
 path: linePath, // 선을 구성하는 좌표배열 입니다
+strokeWeight: 5, // 선의 두께 입니다
+strokeColor: '#FF0000', // 선의 색깔입니다
+strokeOpacity: 0.9, // 선의 불투명도 입니다 1에서 0 사이의 값이며 0에 가까울수록 투명합니다
+strokeStyle: 'solid' // 선의 스타일입니다
+});
+
+var polyline2 = new daum.maps.Polyline({
+path: linePath2, // 선을 구성하는 좌표배열 입니다
 strokeWeight: 5, // 선의 두께 입니다
 strokeColor: '#FF0000', // 선의 색깔입니다
 strokeOpacity: 0.9, // 선의 불투명도 입니다 1에서 0 사이의 값이며 0에 가까울수록 투명합니다
@@ -85,9 +104,9 @@ var positions = [
 
     },
     {
-        title: '3.SBS공개홀 버스정류장', 
-        content :'<a class="arrow_box" data-toggle="modal" href="#myModal3">3. SBS공개홀 버스정류장(08:12)</a>',
-        latlng: new daum.maps.LatLng(37.563558,126.850167)
+        title: '3.탑산초근처(우회됨)', 
+        content :'<a class="arrow_box" data-toggle="modal" href="#myModal3">3. 탑산초근처-우회됨(08:12)</a>',
+        latlng: new daum.maps.LatLng(37.5653902,126.8531871)
     },
     {
         title: '4.가양역 우성아파트',
