@@ -122,6 +122,5 @@ var positions = [
 
 ];
 
-var zoomControl = new daum.maps.ZoomControl();
-map.addControl(zoomControl, daum.maps.ControlPosition.RIGHT);
+
 
