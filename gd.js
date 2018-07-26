@@ -147,7 +147,7 @@ var positions = [
         content :'<a class="arrow_box" data-toggle="modal" href="#myModal6">6.남서울중,성보중고(08:15)</a>',
         latlng: new daum.maps.LatLng(37.48286,126.920793)
         },
-	}
+	{
 	title:'6-1.현대홈마트근처',
         content :'<a class="arrow_box" data-toggle="modal" href="#myModal61">6-1.현대홈마트근처(08:15)</a>',
         latlng: new daum.maps.LatLng(37.47995,126.91495)
