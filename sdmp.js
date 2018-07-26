@@ -59,9 +59,35 @@ new daum.maps.LatLng(37.539388,126.945375)
 
 ];
 
+var linePath2 = [
+new daum.maps.LatLng(37.54399,126.950825),
+new daum.maps.LatLng(37.5438968,126.9510716),
+new daum.maps.LatLng(37.5442456,126.9530082),
+new daum.maps.LatLng(37.544505,126.9544405),
+new daum.maps.LatLng(37.5446709,126.9550467),
+new daum.maps.LatLng(37.5450622,126.9555134),
+new daum.maps.LatLng(37.546789,126.9575089),
+new daum.maps.LatLng(37.5470315,126.9577879),
+new daum.maps.LatLng(37.547074,126.9577074),
+new daum.maps.LatLng(37.5452791,126.9556528),
+new daum.maps.LatLng(37.5447389,126.9550198),
+new daum.maps.LatLng(37.544437,126.9536573),
+new daum.maps.LatLng(37.5438713,126.9507337)
+
+];
+
+
 // 지도에 표시할 선을 생성합니다
 var polyline = new daum.maps.Polyline({
 path: linePath, // 선을 구성하는 좌표배열 입니다
+strokeWeight: 5, // 선의 두께 입니다
+strokeColor: '#FF0000', // 선의 색깔입니다
+strokeOpacity: 0.9, // 선의 불투명도 입니다 1에서 0 사이의 값이며 0에 가까울수록 투명합니다
+strokeStyle: 'solid' // 선의 스타일입니다
+});
+
+var polyline2 = new daum.maps.Polyline({
+path: linePath2, // 선을 구성하는 좌표배열 입니다
 strokeWeight: 5, // 선의 두께 입니다
 strokeColor: '#FF0000', // 선의 색깔입니다
 strokeOpacity: 0.9, // 선의 불투명도 입니다 1에서 0 사이의 값이며 0에 가까울수록 투명합니다
@@ -118,6 +144,11 @@ var positions = [
         title:'9.공덕역1번출구',
         content :'<a class="arrow_box" data-toggle="modal" href="#myModal9">9. 공덕역1번출구(08:24)</a>',
         latlng: new daum.maps.LatLng(37.54408,126.950433)
+        },
+		{
+        title:'9-1.신공덕레미안2차202동앞',
+        content :'<a class="arrow_box" data-toggle="modal" href="#myModal91">9-1. 신공덕레미안2차202동앞(08:24)</a>',
+        latlng: new daum.maps.LatLng(37.54675,126.95757)
         },
         {
         title:'10.마포역',

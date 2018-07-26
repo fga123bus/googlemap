@@ -22,6 +22,7 @@ var map = new daum.maps.Map(mapContainer, mapOption); // 지도를 생성합니�
 
 // 지도에 선을 표시합니다 
 polyline.setMap(map);  
+polyline2.setMap(map);  
 
 for (var i = 0; i < positions.length; i ++) {
     var mapCustomOverlay = new daum.maps.CustomOverlay({
@@ -161,7 +162,7 @@ map.addControl(zoomControl, daum.maps.ControlPosition.RIGHT);
             <h6 class="modal-title">6. 아현역(08:16)</h6>
             </div>
             <div class="modal-body">
-            <p>(08:16)이전에 나오셔야 탑승가능합니다.</p>
+            <p>(08:16)이전에 나오셔야 탑승가능합니다.<br>양일_탑승/귀가(양한경,선하나)</p>
             </div>
             <div class="modal-footer">
             <a class="btn btn-info btn-sm" target="_blank" href="http://map.daum.net/link/roadview/37.557382,126.956083" role="button">주변사진 바로가기</a>
@@ -199,7 +200,7 @@ map.addControl(zoomControl, daum.maps.ControlPosition.RIGHT);
             <h6 class="modal-title">8. 마포자이2차아파트(08:22)</h6>
             </div>
             <div class="modal-body">
-            <p>(08:22)이전에 나오셔야 탑승가능합니다.<br>강승우(초3),강지우(유치),강희우(유아-<a href="tel:01073488527">심윤희님</a>)</p>
+            <p>(08:22)이전에 나오셔야 탑승가능합니다.<br>이다연(초2)</p>
             </div>
             <div class="modal-footer">
             <a class="btn btn-info btn-sm" target="_blank" href="http://map.daum.net/link/roadview/37.548607,126.942495" role="button">주변사진 바로가기</a>
@@ -218,11 +219,30 @@ map.addControl(zoomControl, daum.maps.ControlPosition.RIGHT);
             <h6 class="modal-title">9. 공덕역1번출구(08:24)</h6>
             </div>
             <div class="modal-body">
-            <p>(08:24)이전에 나오셔야 탑승가능합니다.</p>
+            <p>(08:24)이전에 나오셔야 탑승가능합니다.<br>강승우(초3),강지우(유치),강희우(유아-<a href="tel:01073488527">심윤희님</a>),</p>
             </div>
             <div class="modal-footer">
             <a class="btn btn-info btn-sm" target="_blank" href="http://map.daum.net/link/roadview/37.54408,126.950433" role="button">주변사진 바로가기</a>
             <a class="btn btn-info btn-sm" href="daummaps://look?p=37.54408,126.950433" role="button">앱(카카오맵) 길찾기</a>
+            <button type="button" class="btn btn-default btn-sm" data-dismiss="modal">닫기</button>
+            </div>
+            </div>
+            </div>
+            </div>
+			
+			<div class="modal fade" id="myModal91" role="dialog">
+            <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+            <div class="modal-header">
+            <h6 class="modal-title">9-1. 신공덕레미안2차202동앞(08:27)</h6>
+            </div>
+            <div class="modal-body">
+            <p>(08:24)이전에 나오셔야 탑승가능합니다.<br></p>
+            </div>
+            <div class="modal-footer">
+            <a class="btn btn-info btn-sm" target="_blank" href="http://map.daum.net/link/roadview/37.54675,126.95757" role="button">주변사진 바로가기</a>
+            <a class="btn btn-info btn-sm" href="daummaps://look?p=37.54675,126.95757" role="button">앱(카카오맵) 길찾기</a>
             <button type="button" class="btn btn-default btn-sm" data-dismiss="modal">닫기</button>
             </div>
             </div>
@@ -234,10 +254,10 @@ map.addControl(zoomControl, daum.maps.ControlPosition.RIGHT);
                     <!-- Modal content-->
                     <div class="modal-content">
                     <div class="modal-header">
-                    <h6 class="modal-title">10. 마포역(08:26)</h6>
+                    <h6 class="modal-title">10. 마포역(08:33)</h6>
                     </div>
                     <div class="modal-body">
-                    <p>(08:26)이전에 나오셔야 탑승가능합니다.<br>강윤아(2학년),김하온(2학년),김하린(3학년)<br>금요일 귀가-(진예안,박서현,김연우,주성혁-2학년)<br>토요일 탑승/귀가-(진예안,박서현,김연우,주성혁,임재인-2학년)</p>
+                    <p>(08:26)이전에 나오셔야 탑승가능합니다.<br>강윤아(2학년),김하온(2학년),김하린(3학년)<br>금_귀가-(진예안,박서현,김연우,주성혁-2학년)<br>토_탑승/귀가-(진예안,박서현,김연우,주성혁,임재인-2학년)</p>
                     </div>
                     <div class="modal-footer">
                     <a class="btn btn-info btn-sm" target="_blank" href="http://map.daum.net/link/roadview/37.53959,126.9456" role="button">주변사진 바로가기</a>
@@ -247,6 +267,8 @@ map.addControl(zoomControl, daum.maps.ControlPosition.RIGHT);
                     </div>
                     </div>
                     </div>
+					
+					
                         
 <div id="help">
       <p>정류장명을 누르면 정보창이 열립니다. 오른쪽 상단 확대,축소가능</p>
