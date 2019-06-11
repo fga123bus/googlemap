@@ -1118,7 +1118,7 @@ var positions = [
         latlng: new daum.maps.LatLng(37.604665,126.910396)
         },
         {
-        title:'설명보기',
+        title:'19_PBS셔틀안내',
         content: '<a class="btn btn-danger btn-sm" data-toggle="modal" href="#myModal">설명보기</a>',
         latlng: new daum.maps.LatLng(37.530471,126.923173)
         },
