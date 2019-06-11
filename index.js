@@ -1118,8 +1118,8 @@ var positions = [
         latlng: new daum.maps.LatLng(37.604665,126.910396)
         },
         {
-        title:'19_PBS셔틀안내',
-        content: '<a class="btn btn-danger btn-sm" data-toggle="modal" href="#myModal">19_PBS셔틀안내</a>',
+        title:'19_PBS셔틀탑승신청',
+        content: '<a class="btn btn-danger btn-sm" data-toggle="modal" href="#myModal">19_PBS셔틀탑승신청</a>',
         latlng: new daum.maps.LatLng(37.530471,126.923173)
         },
 
