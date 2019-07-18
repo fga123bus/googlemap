@@ -142,9 +142,14 @@ var positions = [
         latlng: new daum.maps.LatLng(37.497183,126.857261)
         },
         {
-        title:'5.구로소방서 앞(고원초)',
-        content :'<a class="arrow_box" data-toggle="modal" href="#myModal5">5.구로소방서</a>',
-        latlng: new daum.maps.LatLng(37.498142,126.865397)
+            title:'5.구로소방서 앞(고원초)',
+            content :'<a class="arrow_box" data-toggle="modal" href="#myModal5">5.구로소방서</a>',
+            latlng: new daum.maps.LatLng(37.498142,126.865397)
+            },
+        {
+        title:'5-1.롯데마트앞',
+        content :'<a class="arrow_box" data-toggle="modal" href="#myModal51">5-1.롯데마트앞</a>',
+        latlng: new daum.maps.LatLng(37.49823635895091,126.87265506160091)
         },
         {
         title:'6.서울미래초등학교',
