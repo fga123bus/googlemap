@@ -82,9 +82,14 @@ var positions = [
         content :'<a class="arrow_box" data-toggle="modal" href="#myModal3">3. DMC역공항철도DMC역8번출구(08:08)</a>',
         latlng: new daum.maps.LatLng(37.577006,126.898102)
         },
+        {
+            title:'3-1.예원아파트',
+            content :'<a class="arrow_box" data-toggle="modal" href="#myModal31">3-1. 예원아파트(08:08)</a>',
+            latlng: new daum.maps.LatLng(37.5743991840517,126.90238363497906)
+        },
 		{
-        title:'3-1.참누리아파트',
-        content :'<a class="arrow_box" data-toggle="modal" href="#myModal31">3-1. 참누리아파트(08:08)</a>',
+        title:'3-2.참누리아파트',
+        content :'<a class="arrow_box" data-toggle="modal" href="#myModal32">3-2. 참누리아파트(08:08)</a>',
         latlng: new daum.maps.LatLng(37.572680,126.905153)
         },
         {
