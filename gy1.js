@@ -91,7 +91,7 @@ var positions = [
         title:'강서양천1호',
         content :'<a class="btn btn-primary btn-sm" data-toggle="modal" href="#myModal_gy1">강서양천1호</a>',
 		//content: '<a class="btn btn-primary btn-sm" href="https://open.kakao.com/o/gecXkUP" role="button">강서양천1호</a>',
-        latlng: new daum.maps.LatLng(37.569332, 126.800213)
+        latlng: new daum.maps.LatLng(37.567875,126.804687)
         },
     {
         title: '1.개화산역2번출구',
