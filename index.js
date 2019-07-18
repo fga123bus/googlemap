@@ -1088,12 +1088,6 @@ var positions = [
         latlng: new daum.maps.LatLng(37.515537,126.83979)
         },
         {
-        title:'강북용산호',
-        content :'<a class="btn btn-info btn-sm" data-toggle="modal" href="#myModal_gbys">강북용산호</a>',
-		//content: '<a class="btn btn-info btn-sm" href="https://open.kakao.com/o/guQ8qUP" role="button">강북용산호</a>',
-        latlng: new daum.maps.LatLng(37.6081801,127.0156002)
-        },
-        {
         title:'마포영등포호',
         content :'<a class="btn btn-info btn-sm" data-toggle="modal" href="#myModal_mpyd">마포영등포호</a>',
 		//content: '<a class="btn btn-info btn-sm" href="https://open.kakao.com/o/gfqorUP" role="button">마포영등포호</a>',
