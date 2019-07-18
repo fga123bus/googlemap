@@ -1109,7 +1109,7 @@ var positions = [
         title:'은평마포2호',
         content :'<a class="btn btn-primary btn-sm" data-toggle="modal" href="#myModal_emp2">은평마포2호</a>',
 		//content: '<a class="btn btn-primary btn-sm" href="https://open.kakao.com/o/g47fsUP" role="button">은평마포2호</a>',
-        latlng: new daum.maps.LatLng(37.604665,126.910396)
+        latlng: new daum.maps.LatLng(37.611501735542454,126.9111511790644)
         },
         {
         title:'19_PBS셔틀탑승신청',
