@@ -5,7 +5,7 @@ var mapContainer = document.getElementById('map'), // 지도를 표시할 div
     };
 
 var linePath = [
-    new daum.maps.LatLng(37.585352,126.879677),
+new daum.maps.LatLng(37.585352,126.879677),
 new daum.maps.LatLng(37.585054,126.879464),
 new daum.maps.LatLng(37.584752,126.879486),
 new daum.maps.LatLng(37.580892,126.885864),

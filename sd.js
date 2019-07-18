@@ -75,9 +75,23 @@ new daum.maps.LatLng(37.506258,126.939712),
 new daum.maps.LatLng(37.507281,126.939982),
 new daum.maps.LatLng(37.508206,126.940144),
 new daum.maps.LatLng(37.509143,126.940182),
-new daum.maps.LatLng(37.510739,126.940209)
+new daum.maps.LatLng(37.510739,126.940209),
+new daum.maps.LatLng(37.513418,126.940189),
+new daum.maps.LatLng(37.513261,126.931856),
+new daum.maps.LatLng(37.508953,126.932137)
+
 
 ];
+
+/*
+new daum.maps.LatLng(37.504364,126.939227),
+new daum.maps.LatLng(37.506258,126.939712),
+new daum.maps.LatLng(37.507281,126.939982),
+new daum.maps.LatLng(37.508206,126.940144),
+new daum.maps.LatLng(37.509143,126.940182),
+new daum.maps.LatLng(37.510739,126.940209)
+*/
+
 
 // 지도에 표시할 선을 생성합니다
 var polyline = new daum.maps.Polyline({
@@ -138,9 +152,14 @@ var positions = [
         title:'10.동작구청,노량진초등학교앞',
         content :'<a class="arrow_box" data-toggle="modal" href="#myModal10">10. 동작구청 노량진초등학교앞(08:27)</a>',
         latlng: new daum.maps.LatLng(37.510683,126.940259)
-        }
-        
+        },
+        {
+                title:'11.서울영화초등학교 부근',
+                content :'<a class="arrow_box" data-toggle="modal" href="#myModal11">11.서울영화초등학교 부근(08:33)</a>',
+                latlng: new daum.maps.LatLng(37.508953,126.932137)
+                }
 
+        
 ];
 
 
