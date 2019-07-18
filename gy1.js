@@ -88,12 +88,6 @@ strokeStyle: 'solid' // 선의 스타일입니다
 
 var positions = [
     {
-        title:'강서양천1호',
-        content :'<a class="btn btn-primary btn-sm" data-toggle="modal" href="#myModal_gy1">강서양천1호</a>',
-		//content: '<a class="btn btn-primary btn-sm" href="https://open.kakao.com/o/gecXkUP" role="button">강서양천1호</a>',
-        latlng: new daum.maps.LatLng(37.537875,126.804687)
-        },
-    {
         title: '1.개화산역2번출구',
         content :'<a class="arrow_box" data-toggle="modal" href="#myModal1">1. 개화산역2번출구(08:00)</a>',
         latlng: new daum.maps.LatLng(37.572474,126.806125)
