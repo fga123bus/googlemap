@@ -5,6 +5,7 @@ var mapContainer = document.getElementById('map'), // 지도를 표시할 div
     };
 
 var linePath = [
+    new daum.maps.LatLng(37.43460015472234,126.90350557087955),
 new daum.maps.LatLng(37.442811,126.903886),
 new daum.maps.LatLng(37.444352,126.904034),
 new daum.maps.LatLng(37.445128,126.90407),
@@ -75,6 +76,11 @@ strokeStyle: 'solid' // 선의 스타일입니다
 });
 
 var positions = [
+    {
+        title:'0.석수역',
+        content :'<a class="arrow_box" data-toggle="modal" href="#myModal1">1. 박미마을(08:00)</a>',
+        latlng: new daum.maps.LatLng(37.43460015472234,126.90350557087955)
+        },
     {
         title:'1.박미마을',
         content :'<a class="arrow_box" data-toggle="modal" href="#myModal1">1. 박미마을(08:00)</a>',
