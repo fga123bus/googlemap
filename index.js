@@ -828,7 +828,10 @@ new daum.maps.LatLng(37.506258,126.939712),
 new daum.maps.LatLng(37.507281,126.939982),
 new daum.maps.LatLng(37.508206,126.940144),
 new daum.maps.LatLng(37.509143,126.940182),
-new daum.maps.LatLng(37.510739,126.940209)
+new daum.maps.LatLng(37.510739,126.940209),
+new daum.maps.LatLng(37.513418,126.940189),
+new daum.maps.LatLng(37.513261,126.931856),
+new daum.maps.LatLng(37.508953,126.932137)
 
 ];
 
