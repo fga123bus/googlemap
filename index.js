@@ -408,7 +408,9 @@ strokeStyle: 'solid' // 선의 스타일입니다
 });
 
 var linePath_gdj = [
-    new daum.maps.LatLng(37.442811,126.903886),
+    new daum.maps.LatLng(37.434496,126.903250),
+new daum.maps.LatLng(37.438965,126.903222),
+new daum.maps.LatLng(37.442811,126.903886),
 new daum.maps.LatLng(37.444352,126.904034),
 new daum.maps.LatLng(37.445128,126.90407),
 new daum.maps.LatLng(37.446128,126.903977),
@@ -458,7 +460,12 @@ new daum.maps.LatLng(37.497538,126.919566),
 new daum.maps.LatLng(37.497869,126.920097),
 new daum.maps.LatLng(37.498427,126.920277),
 new daum.maps.LatLng(37.499982,126.920367),
-new daum.maps.LatLng(37.51039,126.924577)
+new daum.maps.LatLng(37.51039,126.924577),
+new daum.maps.LatLng(37.5123896,126.9253063),
+new daum.maps.LatLng(37.5147725,126.9270444),
+new daum.maps.LatLng(37.516951,126.9284821),
+new daum.maps.LatLng(37.5174489,126.928246),
+new daum.maps.LatLng(37.5184785,126.927259)
 
 
 ];
