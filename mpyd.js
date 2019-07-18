@@ -85,7 +85,7 @@ var positions = [
         {
             title:'3-1.예원아파트',
             content :'<a class="arrow_box" data-toggle="modal" href="#myModal31">3-1. 예원아파트(08:08)</a>',
-            latlng: new daum.maps.LatLng(37.5743991840517,126.90238363497906)
+            latlng: new daum.maps.LatLng(37.57381587763501,126.90303643474527)
         },
 		{
         title:'3-2.참누리아파트',
