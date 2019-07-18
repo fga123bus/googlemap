@@ -1075,7 +1075,7 @@ var positions = [
         title:'금천동작호',
         content :'<a class="btn btn-primary btn-sm" data-toggle="modal" href="#myModal_gdj">금천동작호</a>',
 		//content: '<a class="btn btn-primary btn-sm" href="https://open.kakao.com/o/gfUrmUP" role="button">금천동작호</a>',
-        latlng: new daum.maps.LatLng(37.442811,126.903886)
+        latlng: new daum.maps.LatLng(37.434496,126.903250)
         },
         {
         title:'부천영등포호',
