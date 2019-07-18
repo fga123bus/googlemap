@@ -27,6 +27,6 @@
 	margin-left: -19px;
 }
 
-#help {position:absolute;top:10px;left:10px;width:200px;height:50px;z-index:10;float:left}
-#help2 {position:absolute;top:210px;left:10px;width:200px;height:100px;z-index:10;float:left}
+#help {position:absolute;top:10px;left:10px;width:200px;height:40px;z-index:10;float:left}
+#help2 {position:absolute;top:60px;left:20px;width:200px;height:100px;z-index:10;float:left}
 </style>
