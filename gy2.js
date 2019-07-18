@@ -66,9 +66,9 @@ var positions = [
     latlng: new daum.maps.LatLng(37.5600697,126.8217914)
     },
     {
-    title: '금요일 귀가하차만_마곡힐스테이트 부근',
-    content :'<a class="arrow_box" data-toggle="modal" href="#myModal98">금요일 귀가시만 운영_마곡힐스테이트</a>',
-    latlng: new daum.maps.LatLng(37.564623,126.816661)
+    title: '1-2. 마곡역',
+    content :'<a class="arrow_box" data-toggle="modal" href="#myModal12">1-2. 마곡역</a>',
+    latlng: new daum.maps.LatLng(37.559761174726525,126.82540878194253)
     },
 	{
     title:'2.발산역8번출구',
