@@ -53,7 +53,11 @@ new daum.maps.LatLng(37.531275,126.899793),
 new daum.maps.LatLng(37.529536,126.898425),
 new daum.maps.LatLng(37.52951,126.898487),
 new daum.maps.LatLng(37.531455,126.900033),
-new daum.maps.LatLng(37.533407,126.901617)
+new daum.maps.LatLng(37.533407,126.901617),
+new daum.maps.LatLng(37.533609,126.902297),
+new daum.maps.LatLng(37.531914,126.905724),
+new daum.maps.LatLng(37.532276,126.906432),
+new daum.maps.LatLng(37.529524,126.907620)
 
 ];
 
@@ -121,6 +125,11 @@ var positions = [
         title:'9.당산역삼성래미안 APT',
         content :'<a class="arrow_box" data-toggle="modal" href="#myModal9">9. 당산역삼성래미안 APT(08:38)</a>',
         latlng: new daum.maps.LatLng(37.533341,126.901657)
+        },
+        {
+            title:'10.강변래미안3차 APT',
+            content :'<a class="arrow_box" data-toggle="modal" href="#myModal10">10. 강변래미안3차 APT(08:40)</a>',
+            latlng: new daum.maps.LatLng(37.529524,126.907620)
         }
 
 ];
