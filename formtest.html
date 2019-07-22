@@ -82,10 +82,26 @@
 		
 		<div>
 			<h1>탑승신청자 리스트</h1>
+            <table class='table table-striped'>
+                <thead>
+                <tr>
+                <th>부서명</th>
+                <th>아이명</th>
+                <th>보호자명</th>
+                <th>정류장명</th>
+                <th>26_등교</th>
+                <th>26_하교</th>
+                <th>27_등교</th>
+                <th>27_하교</th>
+                </tr>
+                </thead>
+                <tbody>
 			<div id="previousOrders">
 				<!-- We will use javascript to insert html for the orders list here -->
 				<!-- if you don't want orders to show on the homepage, you can duplicate the page and remove this from here, leave the other one with a werid name so only you can find it -->
 			</div>
+                </tbody>
+                </table>
 		</div>
 
 	</div>
@@ -165,32 +181,9 @@
                     //                            <p>이용날짜: `+order.useday1+'_'+order.useday2+'_'+order.useday3+'_'+order.useday4+`</p>
                       //                          <p>정류장명: `+order.sel_stop+`</p>
 						//					</div>`;
-                var individialOrderHtml = '<table class='table table-striped'>+
-                                            '<thead>'+'
-                                            <tr>'+'
-                                                <th>부서명</th>'
-                                                '<th>아이명</th>
-                                                '<th>보호자명</th>
-                                                '<th>정류장명</th>
-                                                '<th>26_등교</th>
-                                                '<th>26_하교</th>
-                                                '<th>27_등교</th>
-                                                '<th>27_하교</th>
-                                            '</tr>
-                                            '</thead>
-                                            '<tbody>
-                                            '<tr>
-                                            '    <th>'+order.child_dp+'</th>
-                                            '    <th>'+order.child_name+'</th>
-                                            '    <th>'+order.child_pname+'</th>
-                                            '    <th>'+order.sel_stop+</th>
-                                            '    <th>'+order.useday1+'</th>
-                                            '    <th>'+order.useday2+'</th>
-                                            '    <th>'+order.useday3+'</th>
-                                            '    <th>'+order.useday4+'</th>
-                                            '</tr>
-                                            '</tbody>
-                                            '</table>';
+                var individialOrderHtml = '<tr><th>'+order.child_dp+'</th><th>'+order.child_name+'</th><th>'+order.child_pname+'</th><th>'+order.sel_stop+'</th><th>'+order.useday1+'</th><th>'+order.useday2+'</th><th>'+order.useday3+'</th><th>'+order.useday4+'</th></tr>';
+                                           
+                                           
 
 				//'add the individual order html to the end of the allOrdersHtml list
 				allOrdersHtml = allOrdersHtml + individialOrderHtml;
