@@ -26,9 +26,9 @@
 				<div class="form-group">
                 <label for="child_dp">탑승 어린이 부서</label>
                 <select class="form-control" id="child_dp">
-                    <option>유년교구 길마을</option>
-                    <option>유년교구 진리마을</option>
-                    <option>유년교구 생명마을</option>
+                    <option>길마을</option>
+                    <option>진리마을</option>
+                    <option>생명마을</option>
                     <option>기타부서</option>
                 </select>
                 </div>
@@ -158,15 +158,41 @@
 				//create html for the individual order
 				//note: this is hard to make look pretty! Be sure to keep your indents nice :-)
 				//IMPORTANT: we use ` here instead of ' (notice the difference?) That allows us to use enters
-				var individialOrderHtml =	`<div class='item'>
-												<p>부서명: `+order.child_dp+`</p>
-												<p>아이명: `+order.child_name+`</p>
-                                                <p>보호자명: `+order.child_pname+`</p>
-                                                <p>이용날짜: `+order.useday1+'_'+order.useday2+'_'+order.useday3+'_'+order.useday4+`</p>
-                                                <p>정류장명: `+order.sel_stop+`</p>
-											</div>`;
-				
-				//add the individual order html to the end of the allOrdersHtml list
+				//var individialOrderHtml =	`<div class='item'>
+                 //                               <p>부서명: `+order.child_dp+`</p>
+				//								<p>아이명: `+order.child_name+`</p>
+                  //                              <p>보호자명: `+order.child_pname+`</p>
+                    //                            <p>이용날짜: `+order.useday1+'_'+order.useday2+'_'+order.useday3+'_'+order.useday4+`</p>
+                      //                          <p>정류장명: `+order.sel_stop+`</p>
+						//					</div>`;
+                var individialOrderHtml = '<table class='table table-striped'>+
+                                            '<thead>'+'
+                                            <tr>'+'
+                                                <th>부서명</th>'
+                                                '<th>아이명</th>
+                                                '<th>보호자명</th>
+                                                '<th>정류장명</th>
+                                                '<th>26_등교</th>
+                                                '<th>26_하교</th>
+                                                '<th>27_등교</th>
+                                                '<th>27_하교</th>
+                                            '</tr>
+                                            '</thead>
+                                            '<tbody>
+                                            '<tr>
+                                            '    <th>'+order.child_dp+'</th>
+                                            '    <th>'+order.child_name+'</th>
+                                            '    <th>'+order.child_pname+'</th>
+                                            '    <th>'+order.sel_stop+</th>
+                                            '    <th>'+order.useday1+'</th>
+                                            '    <th>'+order.useday2+'</th>
+                                            '    <th>'+order.useday3+'</th>
+                                            '    <th>'+order.useday4+'</th>
+                                            '</tr>
+                                            '</tbody>
+                                            '</table>';
+
+				//'add the individual order html to the end of the allOrdersHtml list
 				allOrdersHtml = allOrdersHtml + individialOrderHtml;
 			});
 			
