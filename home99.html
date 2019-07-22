@@ -50,12 +50,13 @@
 
                 <div class="form-group">
 					<p>이용날짜:</p>
-					<input type="checkbox" class="form-check-input" value="on" name="day1">26일 등교
-                    <input type="checkbox" class="form-check-input" value="on" name="day2">26일 하교
-                    <input type="checkbox" class="form-check-input" value="on" name="day3">27일 등교
-                    <input type="checkbox" class="form-check-input" value="on" name="day4">27일 하교
+					<input type="checkbox" class="form-check-input" value="on" name="useday">26일 등교
+                    <input type="checkbox" class="form-check-input" value="on" name="useday">26일 하교
+                    <input type="checkbox" class="form-check-input" value="on" name="useday">27일 등교
+                    <input type="checkbox" class="form-check-input" value="on" name="useday">27일 하교
+					<input type='button' onclick='check_all();' value='모두선택' />
 				</div>
-
+				
                 <div class="form-group">
                 <label for="sel_stop">탑승하실 정류장</label>
                 <select class="form-control" id="sel_stop">
@@ -135,6 +136,15 @@
 		var firebaseOrdersCollection = database.ref().child('orders');
 		//this function is called when the submit button is clicked
 		
+		function check_all() {
+		for(i=0; i < my_form.mycheck.length; i++) {
+		my_form.mycheck[i].checked = true;
+		}
+		}
+				
+
+
+
 		function submitOrder() {
 			//Grab order data from the form
 			var order = {
