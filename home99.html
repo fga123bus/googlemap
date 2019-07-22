@@ -57,34 +57,41 @@
 				</div>
 				
 				<script>
-				$("#useday11").change(function(){
-					// If change is confirmed this checks if the checkbox is checked
-					if(this.checked) {
-						// Changes the value attribute to you value 
-						$('.changeThis').attr('value', '탑승');
-					}
+				$(document).ready(function(){
+					$("#useday11").change(function(){
+						if($(this).prop("checked") == true){
+							$("#useday11").val("탑승");
+						}
+						else if($(this).prop("checked") == false){
+							$("#useday11").val("-");
+						}
+					});
+					$("#useday12").change(function(){
+						if($(this).prop("checked") == true){
+							$("#useday12").val("탑승");
+						}
+						else if($(this).prop("checked") == false){
+							$("#useday12").val("-");
+						}
+					});
+					$("#useday21").change(function(){
+						if($(this).prop("checked") == true){
+							$("#useday21").val("탑승");
+						}
+						else if($(this).prop("checked") == false){
+							$("#useday21").val("-");
+						}
+					});
+					$("#useday22").change(function(){
+						if($(this).prop("checked") == true){
+							$("#useday22").val("탑승");
+						}
+						else if($(this).prop("checked") == false){
+							$("#useday22").val("-");
+						}
+					});
 				});
-				$("#useday12").change(function(){
-					// If change is confirmed this checks if the checkbox is checked
-					if(this.checked) {
-						// Changes the value attribute to you value 
-						$('.changeThis').attr('value', '탑승');
-					}
-				});
-				$("#useday21").change(function(){
-					// If change is confirmed this checks if the checkbox is checked
-					if(this.checked) {
-						// Changes the value attribute to you value 
-						$('.changeThis').attr('value', '탑승');
-					}
-				});
-				$("#useday22").change(function(){
-					// If change is confirmed this checks if the checkbox is checked
-					if(this.checked) {
-						// Changes the value attribute to you value 
-						$('.changeThis').attr('value', '탑승');
-					}
-				});
+				
 				</script>
 
 
