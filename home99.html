@@ -48,50 +48,64 @@
 					<input type="text" class="form-control" id="tel_num" placeholder="ex)01012345678">
 				</div>
 
-                <div class="form-check form-check-inline">
-					<p>이용날짜:</p>
-					<input type="checkbox" class="form-check-input" id="useday11">26일 등교
-                    <input type="checkbox" class="form-check-input" id="useday12">26일 하교
-                    <input type="checkbox" class="form-check-input" id="useday21">27일 등교
-                    <input type="checkbox" class="form-check-input" id="useday22">27일 하교
+                <div class="form-group form-check form-check-inline">
+					<label for="useday11">26일 등교:</label>
+					<input type="checkbox" class="form-check-input" id="useday11" name="useday11">
+					<input type="hidden" id="useday1" name="useday1">
+                    <label for="useday12">26일 하교:</label>
+					<input type="checkbox" class="form-check-input" id="useday12" name="useday12">
+					<input type="hidden" id="useday2" name="useday2">
+                    <label for="useday21">27일 등교:</label>
+					<input type="checkbox" class="form-check-input" id="useday21" name="useday21">
+					<input type="hidden" id="useday3" name="useday3">
+                    <label for="useday22">27일 하교:</label>
+					<input type="checkbox" class="form-check-input" id="useday22" name="useday22">
+					<input type="hidden" id="useday3" name="useday3">
 				</div>
 				
 				<script>
 				$(document).ready(function(){
-					$("#useday11").change(function(){
-						if($(this).prop("checked") == true){
-							$("#useday11").val("탑승");
+					$("#useday11").change(
+						function(){
+							if($("#useday11").is(":checked")){
+								$("#useday1").val('탑승');
+							} else{
+								$("#useday1").val('-');
+							}
 						}
-						else if($(this).prop("checked") == false){
-							$("#useday11").val("-");
 						}
-					});
-					$("#useday12").change(function(){
-						if($(this).prop("checked") == true){
-							$("#useday12").val("탑승");
+					);
+					$("#useday12").change(
+						function(){
+							if($("#useday12").is(":checked")){
+								$("#useday2").val('탑승');
+							} else{
+								$("#useday2").val('-');
+							}
 						}
-						else if($(this).prop("checked") == false){
-							$("#useday12").val("-");
 						}
-					});
-					$("#useday21").change(function(){
-						if($(this).prop("checked") == true){
-							$("#useday21").val("탑승");
+					);
+					$("#useday21").change(
+						function(){
+							if($("#useday21").is(":checked")){
+								$("#useday3").val('탑승');
+							} else{
+								$("#useday3").val('-');
+							}
 						}
-						else if($(this).prop("checked") == false){
-							$("#useday21").val("-");
 						}
-					});
-					$("#useday22").change(function(){
-						if($(this).prop("checked") == true){
-							$("#useday22").val("탑승");
+					);
+					$("#useday22").change(
+						function(){
+							if($("#useday22").is(":checked")){
+								$("#useday4").val('탑승');
+							} else{
+								$("#useday4").val('-');
+							}
 						}
-						else if($(this).prop("checked") == false){
-							$("#useday22").val("-");
 						}
-					});
+					);
 				});
-				
 				</script>
 
 
