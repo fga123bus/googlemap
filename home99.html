@@ -1,41 +1,161 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8">
-    <title>신청폼(temp)</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="arrow_box.css">
-    <script src="https://www.gstatic.com/firebasejs/5.10.1/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/5.10.1/firebase-database.js"></script>
-<script>
-var firebaseConfig = {
-  apiKey: "AIzaSyCAbLroYxJPSuZx1m_zqURzccQvbixXT6M",
-  authDomain: "pbsbus123.firebaseapp.com",
-  databaseURL: "https://pbsbus123.firebaseio.com",
-  projectId: "pbsbus123",
-  storageBucket: "pbsbus123.appspot.com",
-  };
-firebase.initializeApp(firebaseConfig);
-var database = firebase.database();
-var firebaseOrdersCollection = database.ref().child('orders');
+<html lang="kr">
 
-function submitOrder() {
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Order Form</title>
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+
+</head>
+
+<body>
+	<div class="container">
+
+		<div class="jumbotron">
+			
+			<h1>탑승자관리</h1>
+			
+			<form>
+
+				<div class="form-group">
+                <label for="child_dp">탑승 어린이 부서</label>
+                <select class="form-control" id="child_dp">
+                    <option>길마을</option>
+                    <option>진리마을</option>
+                    <option>생명마을</option>
+                    <option>기타부서</option>
+                </select>
+                </div>
+
+                <div class="form-group">
+					<label for="child_name">탑승 어린이 이름: </label>
+					<input type="text" class="form-control" id="child_name" placeholder="ex)홍길동">
+				</div>
+                
+                <div class="form-group">
+					<label for="child_pname">탑승 어린이 보호자: </label>
+					<input type="text" class="form-control" id="child_pname" placeholder="ex)홍명보">
+				</div>
+
+                <div class="form-group">
+					<label for="tel_num">탑승 어린이 보호자 전화번호: </label>
+					<input type="text" class="form-control" id="tel_num" placeholder="ex)홍길동">
+				</div>
+
+                <div class="form-group">
+					<p>이용날짜:</p>
+					<input type="checkbox" class="form-check-input" value="on" name="day1">26일 등교
+                    <input type="checkbox" class="form-check-input" value="on" name="day2">26일 하교
+                    <input type="checkbox" class="form-check-input" value="on" name="day3">27일 등교
+                    <input type="checkbox" class="form-check-input" value="on" name="day4">27일 하교
+				</div>
+
+                <div class="form-group">
+                <label for="sel_stop">탑승하실 정류장</label>
+                <select class="form-control" id="sel_stop">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                </select>
+                </div>
+
+                <!-- todo: we should add a phone and an email field too so we can contact them back!! -->
+				<!-- This would be almost the same as the fullNameField, you have to change a couple things though, can you see what? -->
+
+				<div class="form-group">
+					<label for="notesField">기타의견: </label>
+					<!-- textarea are like inputs but they're for long text! -->
+					<textarea class="form-control" id="notesField"></textarea>
+				</div>
+
+				<!-- it's important NOT to use <button> here because that will do something els (that's why we use <a> and make it look like a button using css -->
+				<a class="btn btn-default" onclick="submitOrder()">등록</a>
+			</form>
+		</div>
+		
+		<div>
+			<h1>탑승신청자 리스트</h1>
+            <table class='table table-striped'>
+                <thead>
+                <tr>
+                <th>부서명</th>
+                <th>아이명</th>
+                <th>보호자명</th>
+                <th>정류장명</th>
+                <th>26_등교</th>
+                <th>26_하교</th>
+                <th>27_등교</th>
+                <th>27_하교</th>
+                </tr>
+                </thead>
+                <tbody id="previousOrders">
+			    </tbody>
+                </table>
+		</div>
+
+	</div>
+
+	<!-- jQuery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+	<!-- Bootstrap JS -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+	<script src="https://www.gstatic.com/firebasejs/4.7.0/firebase.js"></script>
+
+	<script>
+		//Store information about your firebase so we can connect
+		
+		//!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+		//IMPORTANT: REPLACE THESE WITH YOUR VALUES (these ones won't work)
+		//!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+		var firebaseConfig = {
+            apiKey: "AIzaSyCAbLroYxJPSuZx1m_zqURzccQvbixXT6M",
+            authDomain: "pbsbus123.firebaseapp.com",
+            databaseURL: "https://pbsbus123.firebaseio.com",
+            projectId: "pbsbus123",
+            storageBucket: "pbsbus123.appspot.com",
+            };
+		
+		//!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+		//!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+		
+		//initialize your firebase
+		firebase.initializeApp(firebaseConfig);
+		var database = firebase.database();
+		
+		//create a variable to hold our orders list from firebase
+		var firebaseOrdersCollection = database.ref().child('orders');
+		//this function is called when the submit button is clicked
+		function submitOrder() {
 			//Grab order data from the form
 			var order = {
-				fullName: $('#fullNameField').val(), //another way you could write is $('#myForm [name="fullname"]').
-				notes: $('#notesField').val(), //another way you could write is $('#myForm [name="fullname"]').
+				child_dp: $('#child_dp').val(), //another way you could write is $('#myForm [name="fullname"]').
+                child_name: $('#child_name').val(), //another way you could write is $('#myForm [name="fullname"]').
+                child_pname: $('#child_pname').val(), //another way you could write is $('#myForm [name="fullname"]').
+                tel_num: $('#tel_num').val(), //another way you could write is $('#myForm [name="fullname"]').
+                useday1: $('').val(), //another way you could write is $('#myForm [name="fullname"]').
+                useday2: $('').val(), //another way you could write is $('#myForm [name="fullname"]').
+                useday3: $('').val(), //another way you could write is $('#myForm [name="fullname"]').
+                useday4: $('').val(), //another way you could write is $('#myForm [name="fullname"]').
+                sel_stop: $('#sel_stop').val(), //another way you could write is $('#myForm [name="fullname"]').
+                notes: $('#notesField').val(), //another way you could write is $('#myForm [name="fullname"]').
 			};
 			
 			//'push' (aka add) your order to the existing list
 			firebaseOrdersCollection.push(order); //'orders' is the name of the 'collection' (aka database table)
 			
 		};
-
-firebaseOrdersCollection.on('value',function(orders){
+		
+		//create a 'listener' which waits for changes to the values inside the firebaseOrdersCollection 
+		firebaseOrdersCollection.on('value',function(orders){
 			
 			//create an empty string that will hold our new HTML
 			var allOrdersHtml = "";
@@ -50,12 +170,18 @@ firebaseOrdersCollection.on('value',function(orders){
 				//create html for the individual order
 				//note: this is hard to make look pretty! Be sure to keep your indents nice :-)
 				//IMPORTANT: we use ` here instead of ' (notice the difference?) That allows us to use enters
-				var individialOrderHtml =	`<div class='item'>
-												<p>Name: `+order.fullName+`</p>
-												<p>Notes: `+order.notes+`</p>
-											</div>`;
-				
-				//add the individual order html to the end of the allOrdersHtml list
+				//var individialOrderHtml =	`<div class='item'>
+                 //                               <p>부서명: `+order.child_dp+`</p>
+				//								<p>아이명: `+order.child_name+`</p>
+                  //                              <p>보호자명: `+order.child_pname+`</p>
+                    //                            <p>이용날짜: `+order.useday1+'_'+order.useday2+'_'+order.useday3+'_'+order.useday4+`</p>
+                      //                          <p>정류장명: `+order.sel_stop+`</p>
+						//					</div>`;
+                var individialOrderHtml = '<tr><th>'+order.child_dp+'</th><th>'+order.child_name+'</th><th>'+order.child_pname+'</th><th>'+order.sel_stop+'</th><th>'+order.useday1+'</th><th>'+order.useday2+'</th><th>'+order.useday3+'</th><th>'+order.useday4+'</th></tr>';
+                                           
+                                           
+
+				//'add the individual order html to the end of the allOrdersHtml list
 				allOrdersHtml = allOrdersHtml + individialOrderHtml;
 			});
 			
@@ -64,23 +190,8 @@ firebaseOrdersCollection.on('value',function(orders){
 			
 			//note: an alternative approach would be to create a hidden html element for one order on the page, duplicate it in the forEach loop, unhide it, and replace the information, and add it back. 
 		});
+	</script>
 
-
-</script>
-
-
-
-</head>
-<body>
-
-<div class="form-group">
-  <label for="usr">Name:</label>
-  <input type="text" class="form-control" id="usr">
-</div>
-<div class="form-group">
-  <label for="pwd">Password:</label>
-  <input type="password" class="form-control" id="pwd">
-</div>
 </body>
 
 </html>
