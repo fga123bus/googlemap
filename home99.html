@@ -136,12 +136,12 @@
 		var firebaseOrdersCollection = database.ref().child('orders');
 		//this function is called when the submit button is clicked
 		
-		function check_all() {
-		for(i=0; i < useday.length; i++) {
-		useday[i].checked = true;
+		function check_all(){
+			for(i=0, item; item=useday[i]; i++){
+			useday[i].checked = true;
 		}
 		};
-		
+
 		function submitOrder() {
 			//Grab order data from the form
 			var order = {
