@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>신청폼(temp)</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="arrow_box.css">
+    <script src="https://www.gstatic.com/firebasejs/5.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.10.1/firebase-database.js"></script>
+<script>
+var firebaseConfig = {
+  apiKey: "AIzaSyCAbLroYxJPSuZx1m_zqURzccQvbixXT6M",
+  authDomain: "pbsbus123.firebaseapp.com",
+  databaseURL: "https://pbsbus123.firebaseio.com",
+  projectId: "pbsbus123",
+  storageBucket: "pbsbus123.appspot.com",
+  };
+firebase.initializeApp(firebaseConfig);
+var database = firebase.database();
+var firebaseOrdersCollection = database.ref().child('orders');
+
+function submitOrder() {
+			//Grab order data from the form
+			var order = {
+				fullName: $('#fullNameField').val(), //another way you could write is $('#myForm [name="fullname"]').
+				notes: $('#notesField').val(), //another way you could write is $('#myForm [name="fullname"]').
+			};
+			
+			//'push' (aka add) your order to the existing list
+			firebaseOrdersCollection.push(order); //'orders' is the name of the 'collection' (aka database table)
+			
+		};
+
+firebaseOrdersCollection.on('value',function(orders){
+			
+			//create an empty string that will hold our new HTML
+			var allOrdersHtml = "";
+			
+			//this is saying foreach order do the following function...
+			orders.forEach(function(firebaseOrderReference){
+				
+				//this gets the actual data (JSON) for the order.
+				var order = firebaseOrderReference.val();
+				console.log(order); //check your console to see it!
+				
+				//create html for the individual order
+				//note: this is hard to make look pretty! Be sure to keep your indents nice :-)
+				//IMPORTANT: we use ` here instead of ' (notice the difference?) That allows us to use enters
+				var individialOrderHtml =	`<div class='item'>
+												<p>Name: `+order.fullName+`</p>
+												<p>Notes: `+order.notes+`</p>
+											</div>`;
+				
+				//add the individual order html to the end of the allOrdersHtml list
+				allOrdersHtml = allOrdersHtml + individialOrderHtml;
+			});
+			
+			//actaull put the html on the page inside the element with the id PreviousOrders
+			$('#previousOrders').html(allOrdersHtml);
+			
+			//note: an alternative approach would be to create a hidden html element for one order on the page, duplicate it in the forEach loop, unhide it, and replace the information, and add it back. 
+		});
+
+
+</script>
+
+
+
+</head>
+<body>
+
+<div class="form-group">
+  <label for="usr">Name:</label>
+  <input type="text" class="form-control" id="usr">
+</div>
+<div class="form-group">
+  <label for="pwd">Password:</label>
+  <input type="password" class="form-control" id="pwd">
+</div>
+</body>
+
+</html>
