@@ -50,16 +50,45 @@
 
                 <div class="form-check form-check-inline">
 					<p>이용날짜:</p>
-					<input type="checkbox" class="form-check-input" value="" id="useday11" name="useday11">26일 등교
-                    <input type="checkbox" class="form-check-input" value="" id="useday12" name="useday12">26일 하교
-                    <input type="checkbox" class="form-check-input" value="" id="useday21" name="useday21">27일 등교
-                    <input type="checkbox" class="form-check-input" value="" id="useday22" name="useday22">27일 하교
+					<input type="checkbox" class="form-check-input" value="탑승" id="useday11">26일 등교
+                    <input type="checkbox" class="form-check-input" value="탑승" id="useday12">26일 하교
+                    <input type="checkbox" class="form-check-input" value="탑승" id="useday21">27일 등교
+                    <input type="checkbox" class="form-check-input" value="탑승" id="useday22">27일 하교
 				</div>
+				
 				<script>
-				$("#useday11").change(function(){if($("#useday11").is(":checked")){$("#useday11").val("탑승");}});
-				$("#useday12").change(function(){if($("#useday12").is(":checked")){$("#useday12").val("탑승");}});
-				$("#useday21").change(function(){if($("#useday21").is(":checked")){$("#useday21").val("탑승");}});
-				$("#useday22").change(function(){if($("#useday22").is(":checked")){$("#useday22").val("탑승");}});
+				$("#useday11").click(function () {
+					if ($(this).prop("checked")) {
+						$("#useday11").val("탑승");
+					}
+					else {
+						$("#useday11").val("");
+					}
+				});
+				$("#useday12").click(function () {
+					if ($(this).prop("checked")) {
+						$("#useday12").val("탑승");
+					}
+					else {
+						$("#useday12").val("");
+					}
+				});
+				$("#useday21").click(function () {
+					if ($(this).prop("checked")) {
+						$("#useday21").val("탑승");
+					}
+					else {
+						$("#useday21").val("");
+					}
+				});
+				$("#useday22").click(function () {
+					if ($(this).prop("checked")) {
+						$("#useday22").val("탑승");
+					}
+					else {
+						$("#useday22").val("");
+					}
+				});
 				</script>
 
 
@@ -142,8 +171,6 @@
 		var firebaseOrdersCollection = database.ref().child('orders');
 		//this function is called when the submit button is clicked
 		
-		
-
 		function submitOrder() {
 			//Grab order data from the form
 			var order = {
