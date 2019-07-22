@@ -48,23 +48,55 @@
 					<input type="text" class="form-control" id="tel_num" placeholder="ex)01012345678">
 				</div>
 
-                <div class="custom-control custom-checkbox">
-				<label class="custom-control-label" for="customCheck">26일 등교</label>
-				<input type="checkbox" class="custom-control-input" id="useday1" name="useday">
+				<div class="form-group">
+                <input type="checkbox" name="c1" />
+				<input type="hidden" name="c1Hidden" />
 				</div>
-				<div class="custom-control custom-checkbox">
-				<label class="custom-control-label" for="customCheck">26일 하교</label>
-				<input type="checkbox" class="custom-control-input" id="useday2" name="useday">
+				<script>
+				if ($('input[name=c1]').is(":checked")) {
+					$('input[name=c1Hidden]').val('Y');
+				} else {
+					$('input[name=c1Hidden]').val('N');
+				}
+				</script>
+
+				<div class="form-group">
+                <input type="checkbox" name="c2" />
+				<input type="hidden" name="c2Hidden" />
 				</div>
-				<div class="custom-control custom-checkbox">
-				<label class="custom-control-label" for="customCheck">27일 등교</label>
-				<input type="checkbox" class="custom-control-input" id="useday3" name="useday">
+				<script>
+				if ($('input[name=c2]').is(":checked")) {
+					$('input[name=c2Hidden]').val('Y');
+				} else {
+					$('input[name=c2Hidden]').val('N');
+				}
+				</script>
+
+				<div class="form-group">
+                <input type="checkbox" name="c3" />
+				<input type="hidden" name="c3Hidden" />
 				</div>
-				<div class="custom-control custom-checkbox">
-				<label class="custom-control-label" for="customCheck">27일 하교</label>
-				<input type="checkbox" class="custom-control-input" id="useday4" name="useday">
+				<script>
+				if ($('input[name=c3]').is(":checked")) {
+					$('input[name=c3Hidden]').val('Y');
+				} else {
+					$('input[name=c3Hidden]').val('N');
+				}
+				</script>
+
+				<div class="form-group">
+                <input type="checkbox" name="c4" />
+				<input type="hidden" name="c4Hidden" />
 				</div>
-				
+				<script>
+				if ($('input[name=c4]').is(":checked")) {
+					$('input[name=c4Hidden]').val('Y');
+				} else {
+					$('input[name=c4Hidden]').val('N');
+				}
+				</script>
+
+
 				<div class="form-group">
                 <label for="sel_stop">탑승하실 정류장</label>
                 <select class="form-control" id="sel_stop">
