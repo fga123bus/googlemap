@@ -48,67 +48,24 @@
 					<input type="text" class="form-control" id="tel_num" placeholder="ex)01012345678">
 				</div>
 
-                <div class="form-group form-check form-check-inline">
-					<label for="useday11">26일 등교:</label>
-					<input type="checkbox" class="form-check-input" id="useday11" name="useday11">
-					<input type="hidden" id="useday1" name="useday1">
-                    <label for="useday12">26일 하교:</label>
-					<input type="checkbox" class="form-check-input" id="useday12" name="useday12">
-					<input type="hidden" id="useday2" name="useday2">
-                    <label for="useday21">27일 등교:</label>
-					<input type="checkbox" class="form-check-input" id="useday21" name="useday21">
-					<input type="hidden" id="useday3" name="useday3">
-                    <label for="useday22">27일 하교:</label>
-					<input type="checkbox" class="form-check-input" id="useday22" name="useday22">
-					<input type="hidden" id="useday3" name="useday3">
+                <div class="custom-control custom-checkbox">
+				<label class="custom-control-label" for="customCheck">26일 등교</label>
+				<input type="checkbox" class="custom-control-input" id="useday1" name="useday">
+				</div>
+				<div class="custom-control custom-checkbox">
+				<label class="custom-control-label" for="customCheck">26일 하교</label>
+				<input type="checkbox" class="custom-control-input" id="useday2" name="useday">
+				</div>
+				<div class="custom-control custom-checkbox">
+				<label class="custom-control-label" for="customCheck">27일 등교</label>
+				<input type="checkbox" class="custom-control-input" id="useday3" name="useday">
+				</div>
+				<div class="custom-control custom-checkbox">
+				<label class="custom-control-label" for="customCheck">27일 하교</label>
+				<input type="checkbox" class="custom-control-input" id="useday4" name="useday">
 				</div>
 				
-				<script>
-				$("#useday11").change(
-					function(){
-						if($("#useday11").is(":checked")){
-							$("#useday1").val('탑승');
-						} else{
-							$("#useday1").val('-');
-							}
-						}
-						}
-					);
-					$("#useday12").change(
-						function(){
-							if($("#useday12").is(":checked")){
-								$("#useday2").val('탑승');
-							} else{
-								$("#useday2").val('-');
-							}
-						}
-						}
-					);
-					$("#useday21").change(
-						function(){
-							if($("#useday21").is(":checked")){
-								$("#useday3").val('탑승');
-							} else{
-								$("#useday3").val('-');
-							}
-						}
-						}
-					);
-					$("#useday22").change(
-						function(){
-							if($("#useday22").is(":checked")){
-								$("#useday4").val('탑승');
-							} else{
-								$("#useday4").val('-');
-							}
-						}
-						}
-					);
-				
-				</script>
-
-
-                <div class="form-group">
+				<div class="form-group">
                 <label for="sel_stop">탑승하실 정류장</label>
                 <select class="form-control" id="sel_stop">
                     <option>1</option>
