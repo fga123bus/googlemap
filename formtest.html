@@ -24,15 +24,58 @@
 			<form>
 
 				<div class="form-group">
-					<label for="fullNameField">탑승 어린이 이름: </label>
-					<input type="text" class="form-control" id="fullNameField">
+                <label for="child_dp">탑승 어린이 부서</label>
+                <select class="form-control" id="child_dp">
+                    <option>유년교구 길마을</option>
+                    <option>유년교구 진리마을</option>
+                    <option>유년교구 생명마을</option>
+                    <option>기타부서</option>
+                </select>
+                </div>
+
+                <div class="form-group">
+					<label for="child_dp">탑승 어린이 부서: </label>
+					<input type="text" class="form-control" id="child_dp">
 				</div>
 
-				<!-- todo: we should add a phone and an email field too so we can contact them back!! -->
+                <div class="form-group">
+					<label for="child_name">탑승 어린이 이름: </label>
+					<input type="text" class="form-control" id="child_name">
+				</div>
+                
+                <div class="form-group">
+					<label for="child_pname">탑승 어린이 보호자: </label>
+					<input type="text" class="form-control" id="child_pname">
+				</div>
+
+                <div class="form-group">
+					<label for="tel_num">탑승 어린이 보호자 전화번호: </label>
+					<input type="text" class="form-control" id="tel_num">
+				</div>
+
+                <div class="form-group">
+					<label>이용날짜</label>
+					<label><input class="form-control" id="useday1" type="checkbox" value="26_등교,">26일 등교</label>
+                    <label><input class="form-control" id="useday2" type="checkbox" value="26_하교,">26일 하교</label>
+                    <label><input class="form-control" id="useday3" type="checkbox" value="27_등교,">27일 등교</label>
+                    <label><input class="form-control" id="useday4" type="checkbox" value="27_하교,">27일 하교</label>
+				</div>
+
+                <div class="form-group">
+                <label for="sel_stop">탑승하실 정류장</label>
+                <select class="form-control" id="sel_stop">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                </select>
+                </div>
+
+                <!-- todo: we should add a phone and an email field too so we can contact them back!! -->
 				<!-- This would be almost the same as the fullNameField, you have to change a couple things though, can you see what? -->
 
 				<div class="form-group">
-					<label for="notesField">What would you like to order?: </label>
+					<label for="notesField">기타의견: </label>
 					<!-- textarea are like inputs but they're for long text! -->
 					<textarea class="form-control" id="notesField"></textarea>
 				</div>
@@ -43,7 +86,7 @@
 		</div>
 		
 		<div>
-			<h1>Previous Orders</h1>
+			<h1>탑승신청자 리스트</h1>
 			<div id="previousOrders">
 				<!-- We will use javascript to insert html for the orders list here -->
 				<!-- if you don't want orders to show on the homepage, you can duplicate the page and remove this from here, leave the other one with a werid name so only you can find it -->
@@ -87,8 +130,16 @@
 		function submitOrder() {
 			//Grab order data from the form
 			var order = {
-				fullName: $('#fullNameField').val(), //another way you could write is $('#myForm [name="fullname"]').
-				notes: $('#notesField').val(), //another way you could write is $('#myForm [name="fullname"]').
+				child_dp: $('#child_dp').val(), //another way you could write is $('#myForm [name="fullname"]').
+                child_name: $('#child_name').val(), //another way you could write is $('#myForm [name="fullname"]').
+                child_pname: $('#child_pname').val(), //another way you could write is $('#myForm [name="fullname"]').
+                tel_num: $('#tel_num').val(), //another way you could write is $('#myForm [name="fullname"]').
+                useday1: $('#useday1').val(), //another way you could write is $('#myForm [name="fullname"]').
+                useday2: $('#useday2').val(), //another way you could write is $('#myForm [name="fullname"]').
+                useday3: $('#useday3').val(), //another way you could write is $('#myForm [name="fullname"]').
+                useday4: $('#useday4').val(), //another way you could write is $('#myForm [name="fullname"]').
+                sel_stop: $('#sel_stop').val(), //another way you could write is $('#myForm [name="fullname"]').
+                notes: $('#notesField').val(), //another way you could write is $('#myForm [name="fullname"]').
 			};
 			
 			//'push' (aka add) your order to the existing list
@@ -113,8 +164,11 @@
 				//note: this is hard to make look pretty! Be sure to keep your indents nice :-)
 				//IMPORTANT: we use ` here instead of ' (notice the difference?) That allows us to use enters
 				var individialOrderHtml =	`<div class='item'>
-												<p>Name: `+order.fullName+`</p>
-												<p>Notes: `+order.notes+`</p>
+												<p>부서명: `+order.child_dp+`</p>
+												<p>아이명: `+order.child_name+`</p>
+                                                <p>보호자명: `+order.child_pname+`</p>
+                                                <p>이용날짜: `+order.useday1+'_'+order.useday2+'_'+order.useday3+'_'+order.useday4+`</p>
+                                                <p>정류장명: `+order.sel_stop+`</p>
 											</div>`;
 				
 				//add the individual order html to the end of the allOrdersHtml list
