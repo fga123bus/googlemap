@@ -135,22 +135,8 @@
 		var firebaseOrdersCollection = database.ref().child('orders');
 		//this function is called when the submit button is clicked
 		
-		var doubleSubmitFlag = false;
-
-	    function doubleSubmitCheck(){
-    	    if(doubleSubmitFlag){
-        	    return doubleSubmitFlag;
-        	}else{
-	            doubleSubmitFlag = true;
-    	        return;
-	        }
-		    }
-
-		
 		function submitOrder() {
 			//Grab order data from the form
-			if(doubleSubmitCheck()) return;
-
 			var order = {
 				child_dp: $('#child_dp').val(), //another way you could write is $('#myForm [name="fullname"]').
                 child_name: $('#child_name').val(), //another way you could write is $('#myForm [name="fullname"]').
@@ -166,7 +152,7 @@
 			
 			//'push' (aka add) your order to the existing list
 			firebaseOrdersCollection.push(order); //'orders' is the name of the 'collection' (aka database table)
-			alert('등록되었습니다');
+			//alert('등록되었습니다');
 		};
 		
 		//create a 'listener' which waits for changes to the values inside the firebaseOrdersCollection 
