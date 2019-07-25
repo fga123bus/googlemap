@@ -23,50 +23,46 @@ var linePath = [
     new daum.maps.LatLng(37.567958,126.842024),
     new daum.maps.LatLng(37.566317,126.845098),
     new daum.maps.LatLng(37.5643357,126.848799),
+    new daum.maps.LatLng(37.5643357,126.848799),
+    new daum.maps.LatLng(37.566938,126.8505907),
+    new daum.maps.LatLng(37.5672952,126.8508589),
+    new daum.maps.LatLng(37.5665893,126.8516529),
+    new daum.maps.LatLng(37.5657304,126.8527472),
+    new daum.maps.LatLng(37.5651096,126.8537128),
+    new daum.maps.LatLng(37.5640125,126.852715),
+    new daum.maps.LatLng(37.5628474,126.8516636),
+    new daum.maps.LatLng(37.56184,126.853557),
+    new daum.maps.LatLng(37.559454,126.858042),
+    new daum.maps.LatLng(37.557026,126.862591),
+    new daum.maps.LatLng(37.556792,126.863036),
+    new daum.maps.LatLng(37.556673,126.862993),
+    new daum.maps.LatLng(37.55635,126.86302),
+    new daum.maps.LatLng(37.553985,126.863481),
+    new daum.maps.LatLng(37.552331,126.86376),
+    new daum.maps.LatLng(37.552241,126.863776),
+    new daum.maps.LatLng(37.551514,126.865423),
+    new daum.maps.LatLng(37.550944,126.866705),
+    new daum.maps.LatLng(37.550289,126.866898),
+    new daum.maps.LatLng(37.550136,126.866834),
+    new daum.maps.LatLng(37.550204,126.866662),
+    new daum.maps.LatLng(37.550723,126.86582),
+    new daum.maps.LatLng(37.551327,126.864474),
+    new daum.maps.LatLng(37.550591,126.864018),
+    new daum.maps.LatLng(37.549681,126.863701),
+    new daum.maps.LatLng(37.549247,126.863556),
+    new daum.maps.LatLng(37.549239,126.863637),
+    new daum.maps.LatLng(37.550613,126.864104),
+    new daum.maps.LatLng(37.550808,126.864533),
+    new daum.maps.LatLng(37.550872,126.864957),
+    new daum.maps.LatLng(37.550455,126.865794),
+    new daum.maps.LatLng(37.549605,126.867204),
+    new daum.maps.LatLng(37.548108,126.869656),
+    new daum.maps.LatLng(37.547529,126.870686),
+    new daum.maps.LatLng(37.546959,126.872284),
+    new daum.maps.LatLng(37.546789,126.87369),
+    new daum.maps.LatLng(37.546768,126.874937)
 
 
-];
-
-var linePath2 = [
-
-new daum.maps.LatLng(37.5643357,126.848799),
-new daum.maps.LatLng(37.566938,126.8505907),
-new daum.maps.LatLng(37.5672952,126.8508589),
-new daum.maps.LatLng(37.5665893,126.8516529),
-new daum.maps.LatLng(37.5657304,126.8527472),
-new daum.maps.LatLng(37.5651096,126.8537128),
-new daum.maps.LatLng(37.5640125,126.852715),
-new daum.maps.LatLng(37.5628474,126.8516636),
-new daum.maps.LatLng(37.56184,126.853557),
-new daum.maps.LatLng(37.559454,126.858042),
-new daum.maps.LatLng(37.557026,126.862591),
-new daum.maps.LatLng(37.556792,126.863036),
-new daum.maps.LatLng(37.556673,126.862993),
-new daum.maps.LatLng(37.55635,126.86302),
-new daum.maps.LatLng(37.553985,126.863481),
-new daum.maps.LatLng(37.552331,126.86376),
-new daum.maps.LatLng(37.552241,126.863776),
-new daum.maps.LatLng(37.551514,126.865423),
-new daum.maps.LatLng(37.550944,126.866705),
-new daum.maps.LatLng(37.550289,126.866898),
-new daum.maps.LatLng(37.550136,126.866834),
-new daum.maps.LatLng(37.550204,126.866662),
-new daum.maps.LatLng(37.550723,126.86582),
-new daum.maps.LatLng(37.551327,126.864474),
-new daum.maps.LatLng(37.550591,126.864018),
-new daum.maps.LatLng(37.549681,126.863701),
-new daum.maps.LatLng(37.549247,126.863556),
-new daum.maps.LatLng(37.549239,126.863637),
-new daum.maps.LatLng(37.550613,126.864104),
-new daum.maps.LatLng(37.550808,126.864533),
-new daum.maps.LatLng(37.550872,126.864957),
-new daum.maps.LatLng(37.550455,126.865794),
-new daum.maps.LatLng(37.549605,126.867204),
-new daum.maps.LatLng(37.548108,126.869656),
-new daum.maps.LatLng(37.547529,126.870686),
-new daum.maps.LatLng(37.546959,126.872284),
-new daum.maps.LatLng(37.546789,126.87369),
-new daum.maps.LatLng(37.546768,126.874937)
 ];
 
 // 지도에 표시할 선을 생성합니다
@@ -78,13 +74,6 @@ strokeOpacity: 0.9, // 선의 불투명도 입니다 1에서 0 사이의 값이�
 strokeStyle: 'solid' // 선의 스타일입니다
 });
 
-var polyline2 = new daum.maps.Polyline({
-path: linePath2, // 선을 구성하는 좌표배열 입니다
-strokeWeight: 5, // 선의 두께 입니다
-strokeColor: '#FF0000', // 선의 색깔입니다
-strokeOpacity: 0.9, // 선의 불투명도 입니다 1에서 0 사이의 값이며 0에 가까울수록 투명합니다
-strokeStyle: 'solid' // 선의 스타일입니다
-});
 
 var positions = [
     {
